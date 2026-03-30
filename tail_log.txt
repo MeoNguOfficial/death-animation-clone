@@ -1,0 +1,120 @@
+2026-03-30T15:35:23.0185473Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1774:31: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0186804Z  1774 | #elif _USE_DECLSPECS_FOR_SAL // ][
+2026-03-30T15:35:23.0187754Z       |                               ^
+2026-03-30T15:35:23.0188991Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1877:123: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0191333Z  1877 | #elif defined(_MSC_EXTENSIONS) && !defined( MIDL_PASS ) && !defined(__midl) && !defined(RC_INVOKED) && defined(_PFT_VER) // ][
+2026-03-30T15:35:23.0192546Z       |                                                                                                                           ^
+2026-03-30T15:35:23.0193975Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:2384:45: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0195311Z  2384 | #if !defined(__midl) && defined(_PREFAST_) // [
+2026-03-30T15:35:23.0195880Z       |                                             ^
+2026-03-30T15:35:23.0197144Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:2880:53: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0198426Z  2880 | #if (!defined(_MSVC_LANG) || _MSVC_LANG < 201703l) // [
+2026-03-30T15:35:23.0199079Z       |                                                     ^
+2026-03-30T15:35:23.0200106Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src/internal.c:16:
+2026-03-30T15:35:23.0201584Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src\internal.h:32:
+2026-03-30T15:35:23.0203115Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/include\opusfile.h:108:
+2026-03-30T15:35:23.0204471Z In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdio.h:13:
+2026-03-30T15:35:23.0205735Z In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:13:
+2026-03-30T15:35:23.0207787Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_stdio_config.h:29:26: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0209103Z    29 | #if !defined RC_INVOKED // RC has no target architecture
+2026-03-30T15:35:23.0209720Z       |                          ^
+2026-03-30T15:35:23.0210767Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_stdio_config.h:51:26: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0212210Z    51 | #if !defined RC_INVOKED // _CRT_STDIO_LEGACY_WIDE_SPECIFIERS et al. are too long for rc
+2026-03-30T15:35:23.0212978Z       |                          ^
+2026-03-30T15:35:23.0213861Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src/internal.c:16:
+2026-03-30T15:35:23.0215381Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src\internal.h:32:
+2026-03-30T15:35:23.0216879Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/include\opusfile.h:108:
+2026-03-30T15:35:23.0218226Z In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdio.h:13:
+2026-03-30T15:35:23.0219707Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:842:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0220894Z   842 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:23.0221475Z       |                                       ^
+2026-03-30T15:35:23.0222585Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:860:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0223820Z   860 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:23.0224412Z       |                                       ^
+2026-03-30T15:35:23.0225524Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:879:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0226784Z   879 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:23.0227342Z       |                                       ^
+2026-03-30T15:35:23.0229429Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:899:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0230660Z   899 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:23.0231251Z       |                                       ^
+2026-03-30T15:35:23.0232419Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:919:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0233618Z   919 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:23.0234219Z       |                                       ^
+2026-03-30T15:35:23.0235343Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:936:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0236595Z   936 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:23.0237168Z       |                                       ^
+2026-03-30T15:35:23.0237844Z fatal error: too many errors emitted, stopping now [-ferror-limit=]
+2026-03-30T15:35:23.0238537Z 20 errors generated.
+2026-03-30T15:35:23.3286100Z [181/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_1_cxx.cxx.obj
+2026-03-30T15:35:25.6180173Z [182/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_0_cxx.cxx.obj
+2026-03-30T15:35:25.6186964Z ninja: build stopped: subcommand failed.
+2026-03-30T15:35:25.6295754Z ##[error]Process completed with exit code 1.
+2026-03-30T15:35:25.6690993Z Post job cleanup.
+2026-03-30T15:35:25.6852234Z Post job cleanup.
+2026-03-30T15:35:25.9241182Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-03-30T15:35:25.9519592Z git version 2.53.0.windows.2
+2026-03-30T15:35:25.9595599Z Temporarily overriding HOME='D:\a\_temp\e46144ea-b32f-45d8-82e8-ea793db41912' before making global git config changes
+2026-03-30T15:35:25.9596538Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-30T15:35:25.9607267Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\death-animation-clone\death-animation-clone\bindings-repo
+2026-03-30T15:35:25.9922188Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-03-30T15:35:26.0239690Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-03-30T15:35:26.5859489Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-30T15:35:26.6132032Z http.https://github.com/.extraheader
+2026-03-30T15:35:26.6185148Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2026-03-30T15:35:26.6506565Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-03-30T15:35:27.1934737Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-30T15:35:27.2248685Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-03-30T15:35:27.8024987Z Post job cleanup.
+2026-03-30T15:35:28.1517988Z ##[group]sccache stats
+2026-03-30T15:35:28.2725173Z [command]C:\Users\runneradmin\.cargo\bin\sccache.exe -s
+2026-03-30T15:35:28.2938345Z Compile requests                    176
+2026-03-30T15:35:28.2939340Z Compile requests executed           176
+2026-03-30T15:35:28.2939766Z Cache hits                            0
+2026-03-30T15:35:28.2940134Z Cache misses                        174
+2026-03-30T15:35:28.2940497Z Cache misses (C/C++)                174
+2026-03-30T15:35:28.2941237Z Cache hits rate                    0.00 %
+2026-03-30T15:35:28.2941672Z Cache hits rate (C/C++)            0.00 %
+2026-03-30T15:35:28.2942037Z Cache timeouts                        0
+2026-03-30T15:35:28.2942401Z Cache read errors                     0
+2026-03-30T15:35:28.2942761Z Forced recaches                       0
+2026-03-30T15:35:28.2943112Z Cache write errors                    0
+2026-03-30T15:35:28.2943457Z Cache errors                          2
+2026-03-30T15:35:28.2943822Z Cache errors (C/C++)                  2
+2026-03-30T15:35:28.2944198Z Compilations                        174
+2026-03-30T15:35:28.2944584Z Compilation failures                  0
+2026-03-30T15:35:28.2944952Z Non-cacheable compilations            0
+2026-03-30T15:35:28.2945336Z Non-cacheable calls                   0
+2026-03-30T15:35:28.2945703Z Non-compilation calls                 0
+2026-03-30T15:35:28.2946088Z Unsupported compiler calls            0
+2026-03-30T15:35:28.2946497Z Average cache write               0.001 s
+2026-03-30T15:35:28.2946861Z Average compiler                  1.997 s
+2026-03-30T15:35:28.2947237Z Average cache read hit            0.000 s
+2026-03-30T15:35:28.2947628Z Failed distributed compilations       0
+2026-03-30T15:35:28.2948307Z Cache location                  Local disk: "D:\\a\\death-animation-clone\\death-animation-clone\\.sccache"
+2026-03-30T15:35:28.2949031Z Use direct/preprocessor mode?   yes
+2026-03-30T15:35:28.2949425Z Version (client)                0.10.0
+2026-03-30T15:35:28.2953227Z Cache size                           55 MiB
+2026-03-30T15:35:28.2953772Z Max cache size                       10 GiB
+2026-03-30T15:35:28.2975774Z ##[endgroup]
+2026-03-30T15:35:28.4829895Z Save cache using key "sccache-win-v1-2026-03-30T15:35:28.480Z".
+2026-03-30T15:35:28.6184094Z [command]"C:\Program Files\Git\usr\bin\tar.exe" --posix -cf cache.tzst --exclude cache.tzst -P -C D:/a/death-animation-clone/death-animation-clone --files-from manifest.txt --force-local --use-compress-program "zstd -T0"
+2026-03-30T15:35:30.2249870Z Sent 57520111 of 57520111 (100.0%), 54.5 MBs/sec
+2026-03-30T15:35:30.4551516Z Post job cleanup.
+2026-03-30T15:35:30.6805624Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-03-30T15:35:30.7083703Z git version 2.53.0.windows.2
+2026-03-30T15:35:30.7159868Z Temporarily overriding HOME='D:\a\_temp\1388865c-c463-444e-81ff-16ad8c7f1aa6' before making global git config changes
+2026-03-30T15:35:30.7160610Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-30T15:35:30.7171845Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\death-animation-clone\death-animation-clone
+2026-03-30T15:35:30.7485224Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-03-30T15:35:30.7789291Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-03-30T15:35:31.3350236Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-30T15:35:31.3639274Z http.https://github.com/.extraheader
+2026-03-30T15:35:31.3690352Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2026-03-30T15:35:31.4014084Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-03-30T15:35:31.9318991Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-30T15:35:31.9646001Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-03-30T15:35:32.5393855Z Cleaning up orphan processes
+2026-03-30T15:35:32.5614185Z Terminate orphan process: pid (3904) (sccache)
+2026-03-30T15:35:32.5715362Z Terminate orphan process: pid (2112) (conhost)
+2026-03-30T15:35:32.5902815Z Terminate orphan process: pid (3432) (vctip)
+2026-03-30T15:35:32.6093807Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/cache@v4, actions/checkout@v4, hendrikmuhs/ccache-action@v1, robinraju/release-downloader@v1.10. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

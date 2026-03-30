@@ -1,0 +1,60 @@
+1131: 2026-03-30T15:34:34.2453311Z       |                          ^~~~~~~~~~~~~~~~~~~~~~
+1132: 2026-03-30T15:34:34.2471574Z D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/silk/x86/NSQ_del_dec_avx2.c:988:30: warning: cast from 'opus_int32 *' (aka 'int *') to '__m128i *' increases required alignment from 4 to 16 [-Wcast-align]
+1133: 2026-03-30T15:34:34.2475239Z   988 |             _mm_storeu_si128((__m128i*)p, silk_mm_smulww_epi32(_mm_loadu_si128((__m128i*)p), gain_adj_Q16));
+1134: 2026-03-30T15:34:34.2476874Z       |                              ^~~~~~~~~~~
+1135: 2026-03-30T15:34:34.2480985Z D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/silk/x86/NSQ_del_dec_avx2.c:988:80: warning: cast from 'opus_int32 *' (aka 'int *') to '__m128i *' increases required alignment from 4 to 16 [-Wcast-align]
+1136: 2026-03-30T15:34:34.2483038Z   988 |             _mm_storeu_si128((__m128i*)p, silk_mm_smulww_epi32(_mm_loadu_si128((__m128i*)p), gain_adj_Q16));
+1137: 2026-03-30T15:34:34.2484006Z       |                                                                                ^~~~~~~~~~~
+1138: 2026-03-30T15:34:34.2485877Z D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/silk/x86/NSQ_del_dec_avx2.c:1043:62: warning: cast from 'const opus_int16 *' (aka 'const short *') to '__m128i *' increases required alignment from 2 to 16 [-Wcast-align]
+1139: 2026-03-30T15:34:34.2491113Z  1043 |         __m256i in_v = _mm256_cvtepi16_epi32(_mm_loadu_si128((__m128i*)&in_ptr[-8]));
+1140: 2026-03-30T15:34:34.2492412Z       |                                                              ^~~~~~~~~~~~~~~~~~~~~
+1141: 2026-03-30T15:34:34.2494359Z D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/silk/x86/NSQ_del_dec_avx2.c:1044:62: warning: cast from 'const opus_int16 *' (aka 'const short *') to '__m128i *' increases required alignment from 2 to 16 [-Wcast-align]
+1142: 2026-03-30T15:34:34.2496426Z  1044 |         __m256i B_v  = _mm256_cvtepi16_epi32(_mm_loadu_si128((__m128i*)&      B[0]));
+1143: 2026-03-30T15:34:34.2497265Z       |                                                              ^~~~~~~~~~~~~~~~~~~~~
+1144: 2026-03-30T15:34:34.2499127Z D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/silk/x86/NSQ_del_dec_avx2.c:1048:58: warning: cast from 'const opus_int16 *' (aka 'const short *') to '__m128i *' increases required alignment from 2 to 16 [-Wcast-align]
+1145: 2026-03-30T15:34:34.2501749Z  1048 |             in_v = _mm256_cvtepi16_epi32(_mm_loadu_si128((__m128i*)&in_ptr[-16]));
+1146: 2026-03-30T15:34:34.2502515Z       |                                                          ^~~~~~~~~~~~~~~~~~~~~~
+1147: 2026-03-30T15:34:34.2504473Z D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/silk/x86/NSQ_del_dec_avx2.c:1049:58: warning: cast from 'const opus_int16 *' (aka 'const short *') to '__m128i *' increases required alignment from 2 to 16 [-Wcast-align]
+1148: 2026-03-30T15:34:34.2506455Z  1049 |             B_v  = _mm256_cvtepi16_epi32(_mm_loadu_si128((__m128i*)&B       [8]));
+1149: 2026-03-30T15:34:34.2507267Z       |                                                          ^~~~~~~~~~~~~~~~~~~~~~
+1150: 2026-03-30T15:34:34.2507909Z 7 warnings generated.
+1151: 2026-03-30T15:34:44.8086520Z [163/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_14_cxx.cxx.obj
+1152: 2026-03-30T15:34:48.3698889Z [164/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_13_cxx.cxx.obj
+1153: 2026-03-30T15:34:51.0379362Z [165/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_12_cxx.cxx.obj
+1154: 2026-03-30T15:34:58.6807419Z [166/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_11_cxx.cxx.obj
+1155: 2026-03-30T15:35:00.3296276Z [167/216] Building CXX object CMakeFiles/DeathAnimations.dir/cmake_pch.hxx.pch
+1156: 2026-03-30T15:35:00.9760694Z [168/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_10_cxx.cxx.obj
+1157: 2026-03-30T15:35:04.2184830Z [169/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_9_cxx.cxx.obj
+1158: 2026-03-30T15:35:07.4383262Z [170/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_8_cxx.cxx.obj
+1159: 2026-03-30T15:35:08.9019967Z [171/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_7_cxx.cxx.obj
+1160: 2026-03-30T15:35:12.9482895Z [172/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_6_cxx.cxx.obj
+1161: 2026-03-30T15:35:14.4121143Z [173/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_5_cxx.cxx.obj
+1162: 2026-03-30T15:35:14.7167888Z [174/216] Linking C static library _deps\ogg-build\ogg.lib
+1163: 2026-03-30T15:35:15.1693696Z [175/216] Linking C static library _deps\opus-build\opus.lib
+1164: 2026-03-30T15:35:19.1813445Z [176/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_4_cxx.cxx.obj
+1165: 2026-03-30T15:35:19.2602510Z [177/216] Building C object _deps/opusfile-build/CMakeFiles/opusfile.dir/src/info.c.obj
+1166: 2026-03-30T15:35:19.2608983Z FAILED: [code=1] _deps/opusfile-build/CMakeFiles/opusfile.dir/src/info.c.obj 
+1167: 2026-03-30T15:35:19.2642579Z C:\Users\runneradmin\.cargo\bin\sccache C:\PROGRA~1\LLVM\bin\clang.exe -DOP_HAVE_LRINTF -ID:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/include -isystem D:/a/death-animation-clone/death-animation-clone/cpm-cache/ogg/b013/include -isystem D:/a/death-animation-clone/death-animation-clone/build/_deps/ogg-build/include -isystem D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/include -O2 -DNDEBUG -g -Xclang -gcodeview -D_DLL -D_MT -Xclang --dependent-lib=msvcrt -flto=thin -std=c89 -pedantic -Wall -Wextra -Wno-parentheses -Wno-long-long -fvisibility=hidden -MD -MT _deps/opusfile-build/CMakeFiles/opusfile.dir/src/info.c.obj -MF _deps\opusfile-build\CMakeFiles\opusfile.dir\src\info.c.obj.d -o _deps/opusfile-build/CMakeFiles/opusfile.dir/src/info.c.obj -c D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src/info.c
+1168: 2026-03-30T15:35:19.2738685Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src/info.c:16:
+1169: 2026-03-30T15:35:19.2803543Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src\internal.h:31:
+1170: 2026-03-30T15:35:19.2976820Z In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdlib.h:12:
+1171: 2026-03-30T15:35:19.3078371Z In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt.h:10:
+1172: 2026-03-30T15:35:19.3176735Z In file included from C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:57:
+1173: 2026-03-30T15:35:19.3217476Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:192:122: error: invalid token at start of a preprocessor expression
+1174: 2026-03-30T15:35:19.3296081Z   192 | #if _USE_DECLSPECS_FOR_SAL && ( defined( MIDL_PASS ) || defined(__midl) || defined(RC_INVOKED) || !defined(_PREFAST_) ) // [
+1175: 2026-03-30T15:35:19.3347842Z       |                                                                                                                          ^
+1176: 2026-03-30T15:35:19.3397453Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:196:129: error: invalid token at start of a preprocessor expression
+1177: 2026-03-30T15:35:19.3502002Z   196 | #if _USE_ATTRIBUTES_FOR_SAL && ( !defined(_MSC_EXTENSIONS) || defined( MIDL_PASS ) || defined(__midl) || defined(RC_INVOKED) ) // [
+1178: 2026-03-30T15:35:19.3544797Z       |                                                                                                                                 ^
+1179: 2026-03-30T15:35:19.3547975Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1497:56: error: invalid token at start of a preprocessor expression
+1180: 2026-03-30T15:35:19.3633032Z  1497 | #if _USE_ATTRIBUTES_FOR_SAL || _USE_DECLSPECS_FOR_SAL // [
+1181: 2026-03-30T15:35:19.3733982Z       |                                                        ^
+1182: 2026-03-30T15:35:19.3834077Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1557:30: error: invalid token at start of a preprocessor expression
+1183: 2026-03-30T15:35:19.3873231Z  1557 | #if _USE_ATTRIBUTES_FOR_SAL // [
+1184: 2026-03-30T15:35:19.3972189Z       |                              ^
+1185: 2026-03-30T15:35:19.4073689Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1585:31: error: invalid token at start of a preprocessor expression
+1186: 2026-03-30T15:35:19.4173152Z  1585 | #elif _USE_DECLSPECS_FOR_SAL // ][
+1187: 2026-03-30T15:35:19.4212844Z       |                               ^
+1188: 2026-03-30T15:35:19.4297896Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1625:56: error: invalid token at start of a preprocessor expression
+1189: 2026-03-30T15:35:19.4408244Z  1625 | #if _USE_ATTRIBUTES_FOR_SAL || _USE_DECLSPECS_FOR_SAL // [
+1190: 2026-03-30T15:35:19.4498661Z       |                                                        ^

@@ -1,0 +1,1391 @@
+2026-03-30T15:32:18.4686652Z Current runner version: '2.333.0'
+2026-03-30T15:32:18.4723216Z ##[group]Runner Image Provisioner
+2026-03-30T15:32:18.4724382Z Hosted Compute Agent
+2026-03-30T15:32:18.4725197Z Version: 20260213.493
+2026-03-30T15:32:18.4726186Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-03-30T15:32:18.4727477Z Build Date: 2026-02-13T00:28:41Z
+2026-03-30T15:32:18.4728944Z Worker ID: {bb1b423e-ee62-4e81-9cad-1ba36ced7cb5}
+2026-03-30T15:32:18.4730086Z Azure Region: eastus
+2026-03-30T15:32:18.4730985Z ##[endgroup]
+2026-03-30T15:32:18.4733139Z ##[group]Operating System
+2026-03-30T15:32:18.4734094Z Microsoft Windows Server 2025
+2026-03-30T15:32:18.4735044Z 10.0.26100
+2026-03-30T15:32:18.4735715Z Datacenter
+2026-03-30T15:32:18.4736435Z ##[endgroup]
+2026-03-30T15:32:18.4737222Z ##[group]Runner Image
+2026-03-30T15:32:18.4738117Z Image: windows-2025
+2026-03-30T15:32:18.4739024Z Version: 20260317.61.1
+2026-03-30T15:32:18.4741459Z Included Software: https://github.com/actions/runner-images/blob/win25/20260317.61/images/windows/Windows2025-Readme.md
+2026-03-30T15:32:18.4744075Z Image Release: https://github.com/actions/runner-images/releases/tag/win25%2F20260317.61
+2026-03-30T15:32:18.4745606Z ##[endgroup]
+2026-03-30T15:32:18.4747585Z ##[group]GITHUB_TOKEN Permissions
+2026-03-30T15:32:18.4750698Z Contents: read
+2026-03-30T15:32:18.4751562Z Metadata: read
+2026-03-30T15:32:18.4752364Z Packages: read
+2026-03-30T15:32:18.4753118Z ##[endgroup]
+2026-03-30T15:32:18.4755990Z Secret source: Actions
+2026-03-30T15:32:18.4757091Z Prepare workflow directory
+2026-03-30T15:32:18.5097586Z Prepare all required actions
+2026-03-30T15:32:18.5141576Z Getting action download info
+2026-03-30T15:32:18.8832573Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-03-30T15:32:19.0109686Z Download action repository 'geode-sdk/build-geode-mod@main' (SHA:825dce8c7404aacc975db01b09c99d295680cdec)
+2026-03-30T15:32:19.4131014Z Getting action download info
+2026-03-30T15:32:19.6747904Z Download action repository 'robinraju/release-downloader@v1.9' (SHA:368754b9c6f47c345fcfbf42bcb577c2f0f5f395)
+2026-03-30T15:32:20.1494560Z Download action repository 'hendrikmuhs/ccache-action@v1' (SHA:5ebbd400eff9e74630f759d94ddd7b6c26299639)
+2026-03-30T15:32:20.4252624Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+2026-03-30T15:32:20.5648649Z Download action repository 'geode-sdk/cli@main' (SHA:0a69a366e22240939dbea2dc25d9b90b22b02e52)
+2026-03-30T15:32:20.9641647Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-03-30T15:32:21.2206532Z Getting action download info
+2026-03-30T15:32:21.3873025Z Download action repository 'robinraju/release-downloader@v1.10' (SHA:c39a3b234af58f0cf85888573d361fb6fa281534)
+2026-03-30T15:32:21.8009272Z Complete job name: Windows
+2026-03-30T15:32:21.9173799Z ##[group]Run actions/checkout@v4
+2026-03-30T15:32:21.9174841Z with:
+2026-03-30T15:32:21.9175275Z   repository: MeoNguOfficial/death-animation-clone
+2026-03-30T15:32:21.9176032Z   token: ***
+2026-03-30T15:32:21.9176395Z   ssh-strict: true
+2026-03-30T15:32:21.9176699Z   ssh-user: git
+2026-03-30T15:32:21.9176959Z   persist-credentials: true
+2026-03-30T15:32:21.9177259Z   clean: true
+2026-03-30T15:32:21.9177529Z   sparse-checkout-cone-mode: true
+2026-03-30T15:32:21.9177838Z   fetch-depth: 1
+2026-03-30T15:32:21.9178096Z   fetch-tags: false
+2026-03-30T15:32:21.9178360Z   show-progress: true
+2026-03-30T15:32:21.9178627Z   lfs: false
+2026-03-30T15:32:21.9178861Z   submodules: false
+2026-03-30T15:32:21.9179127Z   set-safe-directory: true
+2026-03-30T15:32:21.9179613Z ##[endgroup]
+2026-03-30T15:32:22.0844196Z Syncing repository: MeoNguOfficial/death-animation-clone
+2026-03-30T15:32:22.0845691Z ##[group]Getting Git version info
+2026-03-30T15:32:22.0846313Z Working directory is 'D:\a\death-animation-clone\death-animation-clone'
+2026-03-30T15:32:22.1861238Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-03-30T15:32:22.5725171Z git version 2.53.0.windows.2
+2026-03-30T15:32:22.5785151Z ##[endgroup]
+2026-03-30T15:32:22.5808705Z Temporarily overriding HOME='D:\a\_temp\8e1cd10b-bb9a-4b75-8386-336f58a0129d' before making global git config changes
+2026-03-30T15:32:22.5811056Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-30T15:32:22.5822090Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\death-animation-clone\death-animation-clone
+2026-03-30T15:32:22.6409487Z Deleting the contents of 'D:\a\death-animation-clone\death-animation-clone'
+2026-03-30T15:32:22.6416585Z ##[group]Initializing the repository
+2026-03-30T15:32:22.6426324Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\death-animation-clone\death-animation-clone
+2026-03-30T15:32:22.7299304Z Initialized empty Git repository in D:/a/death-animation-clone/death-animation-clone/.git/
+2026-03-30T15:32:22.7347568Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/MeoNguOfficial/death-animation-clone
+2026-03-30T15:32:22.7867738Z ##[endgroup]
+2026-03-30T15:32:22.7868305Z ##[group]Disabling automatic garbage collection
+2026-03-30T15:32:22.7878578Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2026-03-30T15:32:22.8173663Z ##[endgroup]
+2026-03-30T15:32:22.8174163Z ##[group]Setting up auth
+2026-03-30T15:32:22.8187014Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-03-30T15:32:22.8507687Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-03-30T15:32:24.3226600Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-30T15:32:24.3530704Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-03-30T15:32:24.8992117Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-30T15:32:24.9316067Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-03-30T15:32:25.4719204Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-03-30T15:32:25.5034453Z ##[endgroup]
+2026-03-30T15:32:25.5034927Z ##[group]Fetching the repository
+2026-03-30T15:32:25.5051153Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0788e6dfaced0dddf54f42f8b56d9061d29db854:refs/remotes/origin/main
+2026-03-30T15:32:26.6537815Z From https://github.com/MeoNguOfficial/death-animation-clone
+2026-03-30T15:32:26.6539039Z  * [new ref]         0788e6dfaced0dddf54f42f8b56d9061d29db854 -> origin/main
+2026-03-30T15:32:26.6863764Z ##[endgroup]
+2026-03-30T15:32:26.6864366Z ##[group]Determining the checkout info
+2026-03-30T15:32:26.6867547Z ##[endgroup]
+2026-03-30T15:32:26.6878543Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2026-03-30T15:32:26.7311333Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2026-03-30T15:32:26.7604250Z ##[group]Checking out the ref
+2026-03-30T15:32:26.7614753Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+2026-03-30T15:32:27.0215466Z Switched to a new branch 'main'
+2026-03-30T15:32:27.0236883Z branch 'main' set up to track 'origin/main'.
+2026-03-30T15:32:27.0302316Z ##[endgroup]
+2026-03-30T15:32:27.0739611Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2026-03-30T15:32:27.1013985Z 0788e6dfaced0dddf54f42f8b56d9061d29db854
+2026-03-30T15:32:27.1636603Z ##[group]Run geode-sdk/build-geode-mod@main
+2026-03-30T15:32:27.1636939Z with:
+2026-03-30T15:32:27.1637095Z   sdk: nightly
+2026-03-30T15:32:27.1637293Z   bindings: geode-sdk/bindings
+2026-03-30T15:32:27.1637511Z   build-config: RelWithDebInfo
+2026-03-30T15:32:27.1637712Z   export-pdb: true
+2026-03-30T15:32:27.1637887Z   bindings-ref: main
+2026-03-30T15:32:27.1638088Z   combine: true
+2026-03-30T15:32:27.1638266Z   cli: latest
+2026-03-30T15:32:27.1638416Z   path: ./
+2026-03-30T15:32:27.1638563Z   android-min-sdk: 23
+2026-03-30T15:32:27.1638998Z   ccache-variant: default
+2026-03-30T15:32:27.1639184Z   use-cpm-cache: true
+2026-03-30T15:32:27.1639365Z   export-debug: false
+2026-03-30T15:32:27.1639524Z   use-lto: true
+2026-03-30T15:32:27.1639684Z   bundle-pdb: false
+2026-03-30T15:32:27.1639972Z   export-symbols: false
+2026-03-30T15:32:27.1640245Z ##[endgroup]
+2026-03-30T15:32:27.1871348Z ##[group]Run DEFAULT_TARGET=Win64
+2026-03-30T15:32:27.1871763Z [36;1mDEFAULT_TARGET=Win64[0m
+2026-03-30T15:32:27.1871999Z [36;1mDEFAULT_CCACHE=sccache[0m
+2026-03-30T15:32:27.1872256Z [36;1mif [ "$RUNNER_OS" = "Linux" ]; then[0m
+2026-03-30T15:32:27.1872521Z [36;1m  ID=linux[0m
+2026-03-30T15:32:27.1872727Z [36;1m  DEFAULT_TARGET=Android64[0m
+2026-03-30T15:32:27.1873006Z [36;1melif [ "$RUNNER_OS" = "Windows" ]; then[0m
+2026-03-30T15:32:27.1873272Z [36;1m  ID=win[0m
+2026-03-30T15:32:27.1873463Z [36;1m  DEFAULT_TARGET=Win64[0m
+2026-03-30T15:32:27.1873712Z [36;1melif [ "$RUNNER_OS" = "macOS" ]; then[0m
+2026-03-30T15:32:27.1873972Z [36;1m  ID=mac[0m
+2026-03-30T15:32:27.1874147Z [36;1m  DEFAULT_TARGET=MacOS[0m
+2026-03-30T15:32:27.1874378Z [36;1m  DEFAULT_CCACHE=[0m
+2026-03-30T15:32:27.1874576Z [36;1mfi[0m
+2026-03-30T15:32:27.1874793Z [36;1m[0m
+2026-03-30T15:32:27.1874985Z [36;1mCCACHE_VARIANT=default[0m
+2026-03-30T15:32:27.1875249Z [36;1mif [ "$CCACHE_VARIANT" = "default" ]; then[0m
+2026-03-30T15:32:27.1875561Z [36;1m  CCACHE_VARIANT=$DEFAULT_CCACHE[0m
+2026-03-30T15:32:27.1875805Z [36;1mfi[0m
+2026-03-30T15:32:27.1875962Z [36;1m[0m
+2026-03-30T15:32:27.1876105Z [36;1mTARGET=[0m
+2026-03-30T15:32:27.1876286Z [36;1mif [ "$TARGET" = "" ]; then[0m
+2026-03-30T15:32:27.1876532Z [36;1m  TARGET=$DEFAULT_TARGET[0m
+2026-03-30T15:32:27.1876749Z [36;1mfi[0m
+2026-03-30T15:32:27.1876900Z [36;1m[0m
+2026-03-30T15:32:27.1877074Z [36;1mif [ "$TARGET" = "Android32" ]; then[0m
+2026-03-30T15:32:27.1877346Z [36;1m  OUTPUT_ID=android32[0m
+2026-03-30T15:32:27.1877597Z [36;1melif [ "$TARGET" = "Android64" ]; then[0m
+2026-03-30T15:32:27.1877875Z [36;1m  OUTPUT_ID=android64[0m
+2026-03-30T15:32:27.1878119Z [36;1melif [ "$TARGET" = "Win64" ]; then[0m
+2026-03-30T15:32:27.1878374Z [36;1m  OUTPUT_ID=win[0m
+2026-03-30T15:32:27.1878592Z [36;1melif [ "$TARGET" = "MacOS" ]; then[0m
+2026-03-30T15:32:27.1878824Z [36;1m  OUTPUT_ID=mac[0m
+2026-03-30T15:32:27.1879023Z [36;1melif [ "$TARGET" = "iOS" ]; then[0m
+2026-03-30T15:32:27.1879276Z [36;1m  OUTPUT_ID=ios[0m
+2026-03-30T15:32:27.1879464Z [36;1mfi[0m
+2026-03-30T15:32:27.1879968Z [36;1m[0m
+2026-03-30T15:32:27.1880207Z [36;1mecho "id=$ID" >> $GITHUB_OUTPUT[0m
+2026-03-30T15:32:27.1880474Z [36;1mecho "target=$TARGET" >> $GITHUB_OUTPUT[0m
+2026-03-30T15:32:27.1880800Z [36;1mecho "target_id=$OUTPUT_ID" >> $GITHUB_OUTPUT[0m
+2026-03-30T15:32:27.1881168Z [36;1mecho "ccache_variant=$CCACHE_VARIANT" >> $GITHUB_OUTPUT[0m
+2026-03-30T15:32:27.1901158Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-03-30T15:32:27.1901557Z ##[endgroup]
+2026-03-30T15:32:27.3595522Z ##[group]Run hendrikmuhs/ccache-action@v1
+2026-03-30T15:32:27.3595789Z with:
+2026-03-30T15:32:27.3595926Z   variant: sccache
+2026-03-30T15:32:27.3596086Z   key: win-v1
+2026-03-30T15:32:27.3596234Z   restore: true
+2026-03-30T15:32:27.3596392Z   max-size: 500MB
+2026-03-30T15:32:27.3596537Z   verbose: 0
+2026-03-30T15:32:27.3596677Z   save: true
+2026-03-30T15:32:27.3599124Z   append-timestamp: true
+2026-03-30T15:32:27.3599414Z   create-symlink: false
+2026-03-30T15:32:27.3599619Z   job-summary: CCache Statistics
+2026-03-30T15:32:27.3599847Z   update-package-index: false
+2026-03-30T15:32:27.3600056Z ##[endgroup]
+2026-03-30T15:32:27.6614902Z ##[group]Install sccache
+2026-03-30T15:32:27.8029392Z [command]"C:\Program Files\Git\bin\sh.exe" -xc "curl -L 'https://github.com/mozilla/sccache/releases/download/v0.10.0/sccache-v0.10.0-x86_64-pc-windows-msvc.tar.gz' | tar xzf - -O --wildcards '*/sccache.exe' > 'C:\Users\runneradmin\.cargo\bin\sccache.exe'"
+2026-03-30T15:32:27.8577780Z + curl -L https://github.com/mozilla/sccache/releases/download/v0.10.0/sccache-v0.10.0-x86_64-pc-windows-msvc.tar.gz
+2026-03-30T15:32:27.8668304Z + tar xzf - -O --wildcards '*/sccache.exe'
+2026-03-30T15:32:27.9136512Z   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+2026-03-30T15:32:27.9137692Z                                  Dload  Upload  Total   Spent   Left   Speed
+2026-03-30T15:32:27.9138222Z 
+2026-03-30T15:32:28.0210515Z   0      0   0      0   0      0      0      0                              0
+2026-03-30T15:32:28.0212735Z   0      0   0      0   0      0      0      0                              0
+2026-03-30T15:32:28.0213421Z   0      0   0      0   0      0      0      0                              0
+2026-03-30T15:32:28.0220246Z 
+2026-03-30T15:32:28.7724779Z   0      0   0      0   0      0      0      0                              0
+2026-03-30T15:32:28.7725445Z 100  7.50M 100  7.50M   0      0  8.72M      0                              0
+2026-03-30T15:32:28.7726068Z 100  7.50M 100  7.50M   0      0  8.72M      0                              0
+2026-03-30T15:32:28.7726673Z 100  7.50M 100  7.50M   0      0  8.71M      0                              0
+2026-03-30T15:32:28.9082522Z [command]"C:\Program Files\Git\bin\sh.exe" -xc "chmod +x 'C:\Users\runneradmin\.cargo\bin\sccache.exe'"
+2026-03-30T15:32:29.0490114Z + chmod +x 'C:\Users\runneradmin\.cargo\bin\sccache.exe'
+2026-03-30T15:32:29.1512084Z C:\Users\runneradmin\.cargo\bin\sccache.exe
+2026-03-30T15:32:29.2404277Z ##[endgroup]
+2026-03-30T15:32:29.2404823Z ##[group]Restore cache
+2026-03-30T15:32:29.4662757Z No cache found.
+2026-03-30T15:32:29.4663521Z ##[endgroup]
+2026-03-30T15:32:29.4663989Z ##[group]Configure sccache, win32
+2026-03-30T15:32:29.5501626Z [command]"C:\Program Files\Git\bin\sh.exe" -xc "env SCCACHE_IDLE_TIMEOUT=0 SCCACHE_DIR='D:\a\death-animation-clone\death-animation-clone\.sccache' SCCACHE_CACHE_SIZE='500MB' sccache --start-server"
+2026-03-30T15:32:29.5832313Z + env SCCACHE_IDLE_TIMEOUT=0 'SCCACHE_DIR=D:\a\death-animation-clone\death-animation-clone\.sccache' SCCACHE_CACHE_SIZE=500MB sccache --start-server
+2026-03-30T15:32:29.6271196Z sccache: Starting the server...
+2026-03-30T15:32:29.6538220Z sccache: Listening on address 127.0.0.1:4226
+2026-03-30T15:32:29.7456479Z [command]"C:\Program Files\Git\bin\sh.exe" -xc "sccache -z"
+2026-03-30T15:32:29.7785515Z + sccache -z
+2026-03-30T15:32:29.7960501Z Statistics zeroed.
+2026-03-30T15:32:29.8016544Z ##[endgroup]
+2026-03-30T15:32:29.9907826Z ##[group]Run actions/cache@v4
+2026-03-30T15:32:29.9908050Z with:
+2026-03-30T15:32:29.9908319Z   path: D:\a\death-animation-clone\death-animation-clone/cpm-cache
+2026-03-30T15:32:29.9908852Z   key: cpm-win-v1-a5a649bd16978d9d0da5d610b4c8c332314b3d181c012f143a706bdb1ed643f3
+2026-03-30T15:32:29.9909323Z   restore-keys: cpm-win-v1-
+
+2026-03-30T15:32:29.9909566Z   enableCrossOsArchive: false
+2026-03-30T15:32:29.9909797Z   fail-on-cache-miss: false
+2026-03-30T15:32:29.9910019Z   lookup-only: false
+2026-03-30T15:32:29.9910202Z   save-always: false
+2026-03-30T15:32:29.9910384Z ##[endgroup]
+2026-03-30T15:32:30.3529120Z Cache not found for input keys: cpm-win-v1-a5a649bd16978d9d0da5d610b4c8c332314b3d181c012f143a706bdb1ed643f3, cpm-win-v1-
+2026-03-30T15:32:30.3748830Z ##[group]Run curl -L https://github.com/ninja-build/ninja/releases/latest/download/ninja-win.zip -o ninja.zip
+2026-03-30T15:32:30.3750964Z [36;1mcurl -L https://github.com/ninja-build/ninja/releases/latest/download/ninja-win.zip -o ninja.zip[0m
+2026-03-30T15:32:30.3751559Z [36;1m7z x ninja.zip -o"$GITHUB_WORKSPACE/ninja"[0m
+2026-03-30T15:32:30.3751906Z [36;1mecho "$GITHUB_WORKSPACE/ninja" >> $GITHUB_PATH[0m
+2026-03-30T15:32:30.3766859Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-03-30T15:32:30.3767226Z ##[endgroup]
+2026-03-30T15:32:30.4354509Z   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+2026-03-30T15:32:30.4355290Z                                  Dload  Upload  Total   Spent   Left   Speed
+2026-03-30T15:32:30.4355721Z 
+2026-03-30T15:32:30.5761585Z   0      0   0      0   0      0      0      0                              0
+2026-03-30T15:32:30.5762386Z   0      0   0      0   0      0      0      0                              0
+2026-03-30T15:32:30.5765316Z   0      0   0      0   0      0      0      0                              0
+2026-03-30T15:32:30.5766093Z 
+2026-03-30T15:32:30.5794223Z   0      0   0      0   0      0      0      0                              0
+2026-03-30T15:32:30.5795680Z   0      0   0      0   0      0      0      0                              0
+2026-03-30T15:32:30.5796610Z   0      0   0      0   0      0      0      0                              0
+2026-03-30T15:32:30.5804594Z 
+2026-03-30T15:32:30.6454472Z   0      0   0      0   0      0      0      0                              0
+2026-03-30T15:32:30.6455326Z 100 284.7k 100 284.7k   0      0  1.31M      0                              0
+2026-03-30T15:32:30.6456472Z 100 284.7k 100 284.7k   0      0  1.31M      0                              0
+2026-03-30T15:32:30.6457416Z 100 284.7k 100 284.7k   0      0  1.31M      0                              0
+2026-03-30T15:32:30.9017032Z 
+2026-03-30T15:32:30.9017900Z 7-Zip 26.00 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-02-12
+2026-03-30T15:32:30.9018514Z 
+2026-03-30T15:32:30.9018669Z Scanning the drive for archives:
+2026-03-30T15:32:30.9019135Z 1 file, 291570 bytes (285 KiB)
+2026-03-30T15:32:30.9019828Z 
+2026-03-30T15:32:30.9019947Z Extracting archive: ninja.zip
+2026-03-30T15:32:30.9291289Z --
+2026-03-30T15:32:30.9291678Z Path = ninja.zip
+2026-03-30T15:32:30.9291978Z Type = zip
+2026-03-30T15:32:30.9292218Z Physical Size = 291570
+2026-03-30T15:32:30.9292407Z 
+2026-03-30T15:32:30.9336070Z Everything is Ok
+2026-03-30T15:32:30.9336301Z 
+2026-03-30T15:32:30.9336579Z Size:       603648
+2026-03-30T15:32:30.9336925Z Compressed: 291570
+2026-03-30T15:32:30.9599214Z ##[group]Run actions/checkout@v4
+2026-03-30T15:32:30.9599426Z with:
+2026-03-30T15:32:30.9599588Z   repository: geode-sdk/bindings
+2026-03-30T15:32:30.9599780Z   ref: main
+2026-03-30T15:32:30.9599929Z   path: bindings-repo
+2026-03-30T15:32:30.9600194Z   token: ***
+2026-03-30T15:32:30.9600348Z   ssh-strict: true
+2026-03-30T15:32:30.9600501Z   ssh-user: git
+2026-03-30T15:32:30.9600664Z   persist-credentials: true
+2026-03-30T15:32:30.9600878Z   clean: true
+2026-03-30T15:32:30.9601049Z   sparse-checkout-cone-mode: true
+2026-03-30T15:32:30.9601263Z   fetch-depth: 1
+2026-03-30T15:32:30.9601415Z   fetch-tags: false
+2026-03-30T15:32:30.9601579Z   show-progress: true
+2026-03-30T15:32:30.9601737Z   lfs: false
+2026-03-30T15:32:30.9601886Z   submodules: false
+2026-03-30T15:32:30.9602046Z   set-safe-directory: true
+2026-03-30T15:32:30.9602236Z ##[endgroup]
+2026-03-30T15:32:31.0944780Z Syncing repository: geode-sdk/bindings
+2026-03-30T15:32:31.0956120Z ##[group]Getting Git version info
+2026-03-30T15:32:31.0957451Z Working directory is 'D:\a\death-animation-clone\death-animation-clone\bindings-repo'
+2026-03-30T15:32:31.1901972Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-03-30T15:32:31.2175204Z git version 2.53.0.windows.2
+2026-03-30T15:32:31.2227629Z ##[endgroup]
+2026-03-30T15:32:31.2250483Z Temporarily overriding HOME='D:\a\_temp\03143ccb-c91d-494d-aba1-7fc77ff2bcd2' before making global git config changes
+2026-03-30T15:32:31.2252256Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-30T15:32:31.2262453Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\death-animation-clone\death-animation-clone\bindings-repo
+2026-03-30T15:32:31.2573128Z ##[group]Initializing the repository
+2026-03-30T15:32:31.2584734Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\death-animation-clone\death-animation-clone\bindings-repo
+2026-03-30T15:32:31.2955440Z Initialized empty Git repository in D:/a/death-animation-clone/death-animation-clone/bindings-repo/.git/
+2026-03-30T15:32:31.3004085Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/geode-sdk/bindings
+2026-03-30T15:32:31.3340907Z ##[endgroup]
+2026-03-30T15:32:31.3341482Z ##[group]Disabling automatic garbage collection
+2026-03-30T15:32:31.3352257Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2026-03-30T15:32:31.3670515Z ##[endgroup]
+2026-03-30T15:32:31.3670916Z ##[group]Setting up auth
+2026-03-30T15:32:31.3685216Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-03-30T15:32:31.3994108Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-03-30T15:32:31.9218165Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-30T15:32:31.9514037Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-03-30T15:32:32.4845262Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-30T15:32:32.5144797Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-03-30T15:32:33.0756394Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-03-30T15:32:33.1062915Z ##[endgroup]
+2026-03-30T15:32:33.1063359Z ##[group]Fetching the repository
+2026-03-30T15:32:33.1077114Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/main*:refs/remotes/origin/main* +refs/tags/main*:refs/tags/main*
+2026-03-30T15:32:34.5009423Z From https://github.com/geode-sdk/bindings
+2026-03-30T15:32:34.5009847Z  * [new branch]      main       -> origin/main
+2026-03-30T15:32:34.5242678Z ##[endgroup]
+2026-03-30T15:32:34.5243351Z ##[group]Determining the checkout info
+2026-03-30T15:32:34.5255939Z [command]"C:\Program Files\Git\bin\git.exe" branch --list --remote origin/main
+2026-03-30T15:32:34.5569814Z   origin/main
+2026-03-30T15:32:34.5602478Z ##[endgroup]
+2026-03-30T15:32:34.5614008Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2026-03-30T15:32:34.5940507Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2026-03-30T15:32:34.6250437Z ##[group]Checking out the ref
+2026-03-30T15:32:34.6262843Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+2026-03-30T15:32:35.1174062Z Switched to a new branch 'main'
+2026-03-30T15:32:35.1189881Z branch 'main' set up to track 'origin/main'.
+2026-03-30T15:32:35.1249264Z ##[endgroup]
+2026-03-30T15:32:35.1584342Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2026-03-30T15:32:35.1858073Z a3c4d9304ed73b60a2e436903929774e24b5fc90
+2026-03-30T15:32:35.2154990Z ##[group]Run echo "GEODE_BINDINGS_REPO_PATH=$GITHUB_WORKSPACE/bindings-repo" >> $GITHUB_ENV
+2026-03-30T15:32:35.2155730Z [36;1mecho "GEODE_BINDINGS_REPO_PATH=$GITHUB_WORKSPACE/bindings-repo" >> $GITHUB_ENV[0m
+2026-03-30T15:32:35.2172447Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-03-30T15:32:35.2172818Z ##[endgroup]
+2026-03-30T15:32:35.2967032Z ##[group]Run geode-sdk/cli/.github/actions/setup@main
+2026-03-30T15:32:35.2967303Z with:
+2026-03-30T15:32:35.2967442Z   version: latest
+2026-03-30T15:32:35.2967592Z env:
+2026-03-30T15:32:35.2967897Z   GEODE_BINDINGS_REPO_PATH: D:\a\death-animation-clone\death-animation-clone/bindings-repo
+2026-03-30T15:32:35.2968295Z ##[endgroup]
+2026-03-30T15:32:35.3109055Z ##[group]Run if [ "$RUNNER_OS" = "Linux" ]; then
+2026-03-30T15:32:35.3109403Z [36;1mif [ "$RUNNER_OS" = "Linux" ]; then[0m
+2026-03-30T15:32:35.3109714Z [36;1m  echo "host=linux" >> $GITHUB_OUTPUT[0m
+2026-03-30T15:32:35.3110028Z [36;1melif [ "$RUNNER_OS" = "Windows" ]; then[0m
+2026-03-30T15:32:35.3110341Z [36;1m  echo "host=win" >> $GITHUB_OUTPUT[0m
+2026-03-30T15:32:35.3110636Z [36;1melif [ "$RUNNER_OS" = "macOS" ]; then[0m
+2026-03-30T15:32:35.3110966Z [36;1m  echo "host=mac" >> $GITHUB_OUTPUT[0m
+2026-03-30T15:32:35.3111239Z [36;1mfi[0m
+2026-03-30T15:32:35.3126998Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-03-30T15:32:35.3127360Z env:
+2026-03-30T15:32:35.3127681Z   GEODE_BINDINGS_REPO_PATH: D:\a\death-animation-clone\death-animation-clone/bindings-repo
+2026-03-30T15:32:35.3128083Z ##[endgroup]
+2026-03-30T15:32:35.3682235Z ##[group]Run robinraju/release-downloader@v1.10
+2026-03-30T15:32:35.3682487Z with:
+2026-03-30T15:32:35.3682647Z   repository: geode-sdk/cli
+2026-03-30T15:32:35.3682828Z   latest: true
+2026-03-30T15:32:35.3682978Z   fileName: *-win.zip
+2026-03-30T15:32:35.3683137Z   tarBall: false
+2026-03-30T15:32:35.3683284Z   zipBall: false
+2026-03-30T15:32:35.3683447Z   out-file-path: my-epic-geode-cli
+2026-03-30T15:32:35.3683663Z   preRelease: false
+2026-03-30T15:32:35.3683814Z   extract: false
+2026-03-30T15:32:35.3684047Z   token: ***
+2026-03-30T15:32:35.3684254Z   github-api-url: https://api.github.com
+2026-03-30T15:32:35.3684473Z env:
+2026-03-30T15:32:35.3684778Z   GEODE_BINDINGS_REPO_PATH: D:\a\death-animation-clone\death-animation-clone/bindings-repo
+2026-03-30T15:32:35.3685158Z ##[endgroup]
+2026-03-30T15:32:35.4994092Z Fetching latest release for repo geode-sdk/cli
+2026-03-30T15:32:35.7468023Z Found latest release version: v3.7.4
+2026-03-30T15:32:35.7478495Z Downloading file: geode-cli-v3.7.4-win.zip to: D:\a\death-animation-clone\death-animation-clone\my-epic-geode-cli
+2026-03-30T15:32:36.0856815Z Done: D:\a\death-animation-clone\death-animation-clone\my-epic-geode-cli\geode-cli-v3.7.4-win.zip
+2026-03-30T15:32:36.1092150Z ##[group]Run 7z x "my-epic-geode-cli/*-win.zip" -omy-epic-geode-cli
+2026-03-30T15:32:36.1092575Z [36;1m7z x "my-epic-geode-cli/*-win.zip" -omy-epic-geode-cli[0m
+2026-03-30T15:32:36.1092902Z [36;1mchmod +x my-epic-geode-cli/geode[0m
+2026-03-30T15:32:36.1093221Z [36;1mecho "$GITHUB_WORKSPACE/my-epic-geode-cli" >> $GITHUB_PATH[0m
+2026-03-30T15:32:36.1109253Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-03-30T15:32:36.1109610Z env:
+2026-03-30T15:32:36.1109939Z   GEODE_BINDINGS_REPO_PATH: D:\a\death-animation-clone\death-animation-clone/bindings-repo
+2026-03-30T15:32:36.1110340Z ##[endgroup]
+2026-03-30T15:32:36.2020355Z 
+2026-03-30T15:32:36.2020843Z 7-Zip 26.00 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-02-12
+2026-03-30T15:32:36.2021162Z 
+2026-03-30T15:32:36.2021245Z Scanning the drive for archives:
+2026-03-30T15:32:36.2021489Z 1 file, 11925441 bytes (12 MiB)
+2026-03-30T15:32:36.2021638Z 
+2026-03-30T15:32:36.2021808Z Extracting archive: my-epic-geode-cli\geode-cli-v3.7.4-win.zip
+2026-03-30T15:32:36.3906996Z --
+2026-03-30T15:32:36.3907391Z Path = my-epic-geode-cli\geode-cli-v3.7.4-win.zip
+2026-03-30T15:32:36.3907823Z Type = zip
+2026-03-30T15:32:36.3908065Z Physical Size = 11925441
+2026-03-30T15:32:36.3908266Z 
+2026-03-30T15:32:36.3911099Z Everything is Ok
+2026-03-30T15:32:36.3912325Z 
+2026-03-30T15:32:36.3912410Z Size:       32337756
+2026-03-30T15:32:36.3912598Z Compressed: 11925441
+2026-03-30T15:32:36.4325960Z ##[group]Run export CLI_PROFILE="D:\a\death-animation-clone\death-animation-clone/cli-profile"
+2026-03-30T15:32:36.4326578Z [36;1mexport CLI_PROFILE="D:\a\death-animation-clone\death-animation-clone/cli-profile"[0m
+2026-03-30T15:32:36.4326971Z [36;1m# for windows[0m
+2026-03-30T15:32:36.4327177Z [36;1mmkdir -p "$CLI_PROFILE/geode/mods"[0m
+2026-03-30T15:32:36.4327557Z [36;1m# for mac[0m
+2026-03-30T15:32:36.4327917Z [36;1mmkdir -p "$CLI_PROFILE/Contents/geode/mods"[0m
+2026-03-30T15:32:36.4328312Z [36;1mgeode profile add --name GithubActions "$CLI_PROFILE/GeometryDash.exe" win[0m
+2026-03-30T15:32:36.4328669Z [36;1m[0m
+2026-03-30T15:32:36.4328978Z [36;1mgeode sdk install "D:\a\death-animation-clone\death-animation-clone/geode-sdk-clone"[0m
+2026-03-30T15:32:36.4329615Z [36;1m[0m
+2026-03-30T15:32:36.4329814Z [36;1m# silly github actions wont refresh the env[0m
+2026-03-30T15:32:36.4330258Z [36;1mexport GEODE_SDK="D:\a\death-animation-clone\death-animation-clone/geode-sdk-clone"[0m
+2026-03-30T15:32:36.4330694Z [36;1mecho "GEODE_SDK=$GEODE_SDK" >> $GITHUB_ENV[0m
+2026-03-30T15:32:36.4330928Z [36;1m[0m
+2026-03-30T15:32:36.4331099Z [36;1mif [ "nightly" == "nightly" ]; then[0m
+2026-03-30T15:32:36.4331348Z [36;1m  geode sdk update nightly[0m
+2026-03-30T15:32:36.4331615Z [36;1m  geode sdk install-binaries --platform win[0m
+2026-03-30T15:32:36.4331894Z [36;1melif [ "nightly" == "latest" ]; then[0m
+2026-03-30T15:32:36.4332135Z [36;1m  geode sdk update stable[0m
+2026-03-30T15:32:36.4332390Z [36;1m  geode sdk install-binaries --platform win[0m
+2026-03-30T15:32:36.4332656Z [36;1melif [ "nightly" == "given" ]; then[0m
+2026-03-30T15:32:36.4333139Z [36;1m  export MOD_JSON_PATH=$(find . -name "mod.json" -not -path "./geode-sdk-clone/*" -print | sort -r | head -n 1)[0m
+2026-03-30T15:32:36.4333699Z [36;1m  export TARGET_GEODE_VERSION=$(jq -r '.geode' $MOD_JSON_PATH)[0m
+2026-03-30T15:32:36.4334132Z [36;1m  echo "Updating to version $TARGET_GEODE_VERSION from $MOD_JSON_PATH"[0m
+2026-03-30T15:32:36.4334511Z [36;1m  geode sdk update "$TARGET_GEODE_VERSION"[0m
+2026-03-30T15:32:36.4334899Z [36;1m  geode sdk install-binaries --platform win --version "$TARGET_GEODE_VERSION"[0m
+2026-03-30T15:32:36.4335262Z [36;1melse[0m
+2026-03-30T15:32:36.4335417Z [36;1m  geode sdk update nightly[0m
+2026-03-30T15:32:36.4335674Z [36;1m  geode sdk install-binaries --platform win[0m
+2026-03-30T15:32:36.4335909Z [36;1mfi[0m
+2026-03-30T15:32:36.4336047Z [36;1m[0m
+2026-03-30T15:32:36.4336331Z [36;1mexport CPM_CACHE="D:\a\death-animation-clone\death-animation-clone/cpm-cache"[0m
+2026-03-30T15:32:36.4336761Z [36;1mecho "CPM_SOURCE_CACHE=$CPM_CACHE" >> $GITHUB_ENV[0m
+2026-03-30T15:32:36.4353483Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-03-30T15:32:36.4353844Z env:
+2026-03-30T15:32:36.4354178Z   GEODE_BINDINGS_REPO_PATH: D:\a\death-animation-clone\death-animation-clone/bindings-repo
+2026-03-30T15:32:36.4354569Z ##[endgroup]
+2026-03-30T15:32:36.5609213Z | Done | A new profile named 'GithubActions' has been created
+2026-03-30T15:32:36.5894387Z | Info | Downloading SDK
+2026-03-30T15:32:36.7946606Z | Info | Enumerating objects: 58147, done.
+2026-03-30T15:32:36.7947192Z | Info | Counting objects:   0% (1/236)
+2026-03-30T15:32:36.7947984Z | Info | Counting objects:   1% (3/236)
+2026-03-30T15:32:36.7948458Z | Info | Counting objects:   2% (5/236)
+2026-03-30T15:32:36.7948913Z | Info | Counting objects:   3% (8/236)
+2026-03-30T15:32:36.7949371Z | Info | Counting objects:   4% (10/236)
+2026-03-30T15:32:36.7949733Z Counting objects:   5% (12/236)
+2026-03-30T15:32:36.7950219Z | Info | Counting objects:   6% (15/236)
+2026-03-30T15:32:36.7950574Z Counting objects:   7% (17/236)
+2026-03-30T15:32:36.7951050Z | Info | Counting objects:   8% (19/236)
+2026-03-30T15:32:36.7951963Z Counting objects:   9% (22/236)
+2026-03-30T15:32:36.7952580Z | Info | Counting objects:  10% (24/236)
+2026-03-30T15:32:36.7952933Z Counting objects:  11% (26/236)
+2026-03-30T15:32:36.7953251Z | Info | Counting objects:  12% (29/236)
+2026-03-30T15:32:36.7953670Z Counting objects:  13% (31/236)
+2026-03-30T15:32:36.7953995Z | Info | Counting objects:  14% (34/236)
+2026-03-30T15:32:36.7954338Z Counting objects:  15% (36/236)
+2026-03-30T15:32:36.7954861Z Counting objects:  16% (38/236)
+2026-03-30T15:32:36.7955201Z | Info | Counting objects:  17% (41/236)
+2026-03-30T15:32:36.7955552Z Counting objects:  18% (43/236)
+2026-03-30T15:32:36.7955876Z | Info | Counting objects:  19% (45/236)
+2026-03-30T15:32:36.7956229Z | Info | Counting objects:  20% (48/236)
+2026-03-30T15:32:36.7956579Z Counting objects:  21% (50/236)
+2026-03-30T15:32:36.7956894Z | Info | Counting objects:  22% (52/236)
+2026-03-30T15:32:36.7957409Z Counting objects:  23% (55/236)
+2026-03-30T15:32:36.7957739Z | Info | Counting objects:  24% (57/236)
+2026-03-30T15:32:36.7958173Z Counting objects:  25% (59/236)
+2026-03-30T15:32:36.7958631Z | Info | Counting objects:  26% (62/236)
+2026-03-30T15:32:36.7959116Z | Info | Counting objects:  27% (64/236)
+2026-03-30T15:32:36.7959714Z | Info | Counting objects:  28% (67/236)
+2026-03-30T15:32:36.7960150Z Counting objects:  29% (69/236)
+2026-03-30T15:32:36.7960650Z | Info | Counting objects:  30% (71/236)
+2026-03-30T15:32:36.7961058Z | Info | Counting objects:  31% (74/236)
+2026-03-30T15:32:36.7961357Z | Info | Counting objects:  32% (76/236)
+2026-03-30T15:32:36.7961590Z | Info | Counting objects:  33% (78/236)
+2026-03-30T15:32:36.7961820Z Counting objects:  34% (81/236)
+2026-03-30T15:32:36.7962029Z | Info | Counting objects:  35% (83/236)
+2026-03-30T15:32:36.7962254Z | Info | Counting objects:  36% (85/236)
+2026-03-30T15:32:36.7962484Z | Info | Counting objects:  37% (88/236)
+2026-03-30T15:32:36.7962711Z | Info | Counting objects:  38% (90/236)
+2026-03-30T15:32:36.7962958Z Counting objects:  39% (93/236)
+2026-03-30T15:32:36.7963176Z | Info | Counting objects:  40% (95/236)
+2026-03-30T15:32:36.7963408Z | Info | Counting objects:  41% (97/236)
+2026-03-30T15:32:36.7963636Z | Info | Counting objects:  42% (100/236)
+2026-03-30T15:32:36.7963876Z | Info | Counting objects:  43% (102/236)
+2026-03-30T15:32:36.7964107Z Counting objects:  44% (104/236)
+2026-03-30T15:32:36.7964322Z | Info | Counting objects:  45% (107/236)
+2026-03-30T15:32:36.7964555Z Counting objects:  46% (109/236)
+2026-03-30T15:32:36.7964764Z | Info | Counting objects:  47% (111/236)
+2026-03-30T15:32:36.7965000Z | Info | Counting objects:  48% (114/236)
+2026-03-30T15:32:36.7965225Z Counting objects:  49% (116/236)
+2026-03-30T15:32:36.7965439Z | Info | Counting objects:  50% (118/236)
+2026-03-30T15:32:36.7965671Z | Info | Counting objects:  51% (121/236)
+2026-03-30T15:32:36.7965901Z Counting objects:  52% (123/236)
+2026-03-30T15:32:36.7966107Z | Info | Counting objects:  53% (126/236)
+2026-03-30T15:32:36.7966337Z Counting objects:  54% (128/236)
+2026-03-30T15:32:36.7966672Z | Info | Counting objects:  55% (130/236)
+2026-03-30T15:32:36.7966970Z Counting objects:  56% (133/236)
+2026-03-30T15:32:36.7967186Z | Info | Counting objects:  57% (135/236)
+2026-03-30T15:32:36.7967416Z | Info | Counting objects:  58% (137/236)
+2026-03-30T15:32:36.7967651Z | Info | Counting objects:  59% (140/236)
+2026-03-30T15:32:36.7967879Z Counting objects:  60% (142/236)
+2026-03-30T15:32:36.7968091Z | Info | Counting objects:  61% (144/236)
+2026-03-30T15:32:36.7968321Z | Info | Counting objects:  62% (147/236)
+2026-03-30T15:32:36.7968556Z Counting objects:  63% (149/236)
+2026-03-30T15:32:36.7968811Z | Info | Counting objects:  64% (152/236)
+2026-03-30T15:32:36.7969057Z | Info | Counting objects:  65% (154/236)
+2026-03-30T15:32:36.7969304Z | Info | Counting objects:  66% (156/236)
+2026-03-30T15:32:36.7969539Z | Info | Counting objects:  67% (159/236)
+2026-03-30T15:32:36.7969781Z | Info | Counting objects:  68% (161/236)
+2026-03-30T15:32:36.7970989Z | Info | Counting objects:  69% (163/236)
+2026-03-30T15:32:36.7971216Z | Info | Counting objects:  70% (166/236)
+2026-03-30T15:32:36.7971436Z | Info | Counting objects:  71% (168/236)
+2026-03-30T15:32:36.7971648Z | Info | Counting objects:  72% (170/236)
+2026-03-30T15:32:36.7971866Z | Info | Counting objects:  73% (173/236)
+2026-03-30T15:32:36.7972082Z | Info | Counting objects:  74% (175/236)
+2026-03-30T15:32:36.7972309Z | Info | Counting objects:  75% (177/236)
+2026-03-30T15:32:36.7972528Z Counting objects:  76% (180/236)
+2026-03-30T15:32:36.7972732Z | Info | Counting objects:  77% (182/236)
+2026-03-30T15:32:36.7972940Z Counting objects:  78% (185/236)
+2026-03-30T15:32:36.7973133Z Counting objects:  79% (187/236)
+2026-03-30T15:32:36.7973327Z | Info | Counting objects:  80% (189/236)
+2026-03-30T15:32:36.7973532Z Counting objects:  81% (192/236)
+2026-03-30T15:32:36.7973726Z | Info | Counting objects:  82% (194/236)
+2026-03-30T15:32:36.7973938Z | Info | Counting objects:  83% (196/236)
+2026-03-30T15:32:36.7974164Z | Info | Counting objects:  84% (199/236)
+2026-03-30T15:32:36.7974369Z Counting objects:  85% (201/236)
+2026-03-30T15:32:36.7974568Z | Info | Counting objects:  86% (203/236)
+2026-03-30T15:32:36.7975091Z Counting objects:  87% (206/236)
+2026-03-30T15:32:36.7975298Z | Info | Counting objects:  88% (208/236)
+2026-03-30T15:32:36.7975507Z Counting objects:  89% (211/236)
+2026-03-30T15:32:36.7975696Z | Info | Counting objects:  90% (213/236)
+2026-03-30T15:32:36.7975907Z Counting objects:  91% (215/236)
+2026-03-30T15:32:36.7976093Z | Info | Counting objects:  92% (218/236)
+2026-03-30T15:32:36.7976301Z Counting objects:  93% (220/236)
+2026-03-30T15:32:36.7976483Z Counting objects:  94% (222/236)
+2026-03-30T15:32:36.7976678Z | Info | Counting objects:  95% (225/236)
+2026-03-30T15:32:36.7976888Z | Info | Counting objects:  96% (227/236)
+2026-03-30T15:32:36.7977178Z Counting objects:  97% (229/236)
+2026-03-30T15:32:36.7977571Z | Info | Counting objects:  98% (232/236)
+2026-03-30T15:32:36.7977959Z Counting objects:  99% (234/236)
+2026-03-30T15:32:36.7978166Z | Info | Counting objects: 100% (236/236)
+2026-03-30T15:32:36.7978404Z | Info | Counting objects: 100% (236/236), done.
+2026-03-30T15:32:36.7978668Z | Info | Compressing objects:   0% (1/105)
+2026-03-30T15:32:36.7978899Z Compressing objects:   1% (2/105)
+2026-03-30T15:32:36.7979141Z | Info | Compressing objects:   2% (3/105)
+2026-03-30T15:32:36.7979552Z | Info | Compressing objects:   3% (4/105)
+2026-03-30T15:32:36.7979923Z | Info | Compressing objects:   4% (5/105)
+2026-03-30T15:32:36.7980314Z | Info | Compressing objects:   5% (6/105)
+2026-03-30T15:32:36.7980760Z | Info | Compressing objects:   6% (7/105)
+2026-03-30T15:32:36.7981076Z | Info | Compressing objects:   7% (8/105)
+2026-03-30T15:32:36.7981297Z | Info | Compressing objects:   8% (9/105)
+2026-03-30T15:32:36.7981527Z | Info | Compressing objects:   9% (10/105)
+2026-03-30T15:32:36.7981757Z | Info | Compressing objects:  10% (11/105)
+2026-03-30T15:32:36.7982000Z | Info | Compressing objects:  11% (12/105)
+2026-03-30T15:32:36.7982230Z | Info | Compressing objects:  12% (13/105)
+2026-03-30T15:32:36.7982466Z | Info | Compressing objects:  13% (14/105)
+2026-03-30T15:32:36.7982688Z | Info | Compressing objects:  14% (15/105)
+2026-03-30T15:32:36.7982932Z | Info | Compressing objects:  15% (16/105)
+2026-03-30T15:32:36.7983174Z | Info | Compressing objects:  16% (17/105)
+2026-03-30T15:32:36.7983413Z | Info | Compressing objects:  17% (18/105)
+2026-03-30T15:32:36.7983653Z | Info | Compressing objects:  18% (19/105)
+2026-03-30T15:32:36.7983880Z | Info | Compressing objects:  19% (20/105)
+2026-03-30T15:32:36.7984116Z | Info | Compressing objects:  20% (21/105)
+2026-03-30T15:32:36.7984340Z | Info | Compressing objects:  21% (23/105)
+2026-03-30T15:32:36.7984572Z | Info | Compressing objects:  22% (24/105)
+2026-03-30T15:32:36.7984792Z Compressing objects:  23% (25/105)
+2026-03-30T15:32:36.7985013Z | Info | Compressing objects:  24% (26/105)
+2026-03-30T15:32:36.7985666Z | Info | Compressing objects:  25% (27/105)
+2026-03-30T15:32:36.7985950Z | Info | Compressing objects:  26% (28/105)
+2026-03-30T15:32:36.7986186Z | Info | Compressing objects:  27% (29/105)
+2026-03-30T15:32:36.7986408Z | Info | Compressing objects:  28% (30/105)
+2026-03-30T15:32:36.7986636Z | Info | Compressing objects:  29% (31/105)
+2026-03-30T15:32:36.7986857Z Compressing objects:  30% (32/105)
+2026-03-30T15:32:36.7987070Z | Info | Compressing objects:  31% (33/105)
+2026-03-30T15:32:36.7987288Z | Info | Compressing objects:  32% (34/105)
+2026-03-30T15:32:36.7987516Z | Info | Compressing objects:  33% (35/105)
+2026-03-30T15:32:36.7987743Z | Info | Compressing objects:  34% (36/105)
+2026-03-30T15:32:36.7987966Z | Info | Compressing objects:  35% (37/105)
+2026-03-30T15:32:36.7988192Z | Info | Compressing objects:  36% (38/105)
+2026-03-30T15:32:36.7988413Z | Info | Compressing objects:  37% (39/105)
+2026-03-30T15:32:36.7988638Z | Info | Compressing objects:  38% (40/105)
+2026-03-30T15:32:36.7988865Z | Info | Compressing objects:  39% (41/105)
+2026-03-30T15:32:36.7989089Z | Info | Compressing objects:  40% (42/105)
+2026-03-30T15:32:36.7989308Z | Info | Compressing objects:  41% (44/105)
+2026-03-30T15:32:36.7989532Z | Info | Compressing objects:  42% (45/105)
+2026-03-30T15:32:36.7989755Z | Info | Compressing objects:  43% (46/105)
+2026-03-30T15:32:36.7990002Z | Info | Compressing objects:  44% (47/105)
+2026-03-30T15:32:36.7990234Z | Info | Compressing objects:  45% (48/105)
+2026-03-30T15:32:36.7990454Z Compressing objects:  46% (49/105)
+2026-03-30T15:32:36.7990669Z | Info | Compressing objects:  47% (50/105)
+2026-03-30T15:32:36.7990887Z Compressing objects:  48% (51/105)
+2026-03-30T15:32:36.7991102Z | Info | Compressing objects:  49% (52/105)
+2026-03-30T15:32:36.7991330Z | Info | Compressing objects:  50% (53/105)
+2026-03-30T15:32:36.7991564Z | Info | Compressing objects:  51% (54/105)
+2026-03-30T15:32:36.7991791Z | Info | Compressing objects:  52% (55/105)
+2026-03-30T15:32:36.7992032Z | Info | Compressing objects:  53% (56/105)
+2026-03-30T15:32:36.7992265Z | Info | Compressing objects:  54% (57/105)
+2026-03-30T15:32:36.7992906Z | Info | Compressing objects:  55% (58/105)
+2026-03-30T15:32:36.7993368Z | Info | Compressing objects:  56% (59/105)
+2026-03-30T15:32:36.7993708Z | Info | Compressing objects:  57% (60/105)
+2026-03-30T15:32:36.7994615Z | Info | Compressing objects:  58% (61/105)
+2026-03-30T15:32:36.7995073Z | Info | Compressing objects:  59% (62/105)
+2026-03-30T15:32:36.7995502Z | Info | Compressing objects:  60% (63/105)
+2026-03-30T15:32:36.7995918Z | Info | Compressing objects:  61% (65/105)
+2026-03-30T15:32:36.7996326Z Compressing objects:  62% (66/105)
+2026-03-30T15:32:36.7996698Z Compressing objects:  63% (67/105)
+2026-03-30T15:32:36.7997086Z Compressing objects:  6| Info | 4% (68/105)
+2026-03-30T15:32:36.7997803Z Compressing objects:  65% (69/105)
+2026-03-30T15:32:36.7999486Z Compressing objects:  66% (70/105)
+2026-03-30T15:32:36.7999964Z Compressing objects:  67% (71/105)
+2026-03-30T15:32:36.8000453Z Compressing| Info |  objects:  68% (72/105)
+2026-03-30T15:32:36.8000954Z Compressing objects:  69% (73/105)
+2026-03-30T15:32:36.8001379Z Compressing objects:  70% (74/105)
+2026-03-30T15:32:36.8001818Z Compressing objects:  71% (75/105)| Info | 
+2026-03-30T15:32:36.8002292Z Compressing objects:  72% (76/105)
+2026-03-30T15:32:36.8002715Z | Info | Compressing objects:  73% (77/105)
+2026-03-30T15:32:36.8003422Z | Info | Compressing objects:  74% (78/105)
+2026-03-30T15:32:36.8003891Z | Info | Compressing objects:  75% (79/105)
+2026-03-30T15:32:36.8004337Z | Info | Compressing objects:  76% (80/105)
+2026-03-30T15:32:36.8004706Z Compressing objects:  77% (81/105)
+2026-03-30T15:32:36.8005080Z Compressing objects:  78% (82/105)
+2026-03-30T15:32:36.8005489Z | Info | Compressing objects:  79% (83/105)
+2026-03-30T15:32:36.8005792Z Compressing objects:  80% (84/105)
+2026-03-30T15:32:36.8006016Z | Info | Compressing objects:  81% (86/105)
+2026-03-30T15:32:36.8007096Z Compressing objects:  82% (87/105)
+2026-03-30T15:32:36.8007360Z Compressing objects:  83% (88/105)
+2026-03-30T15:32:36.8008139Z Compressing objects:  8| Info | 4% (89/105)
+2026-03-30T15:32:36.8008397Z Compressing objects:  85% (90/105)
+2026-03-30T15:32:36.8008612Z | Info | Compressing objects:  86% (91/105)
+2026-03-30T15:32:36.8008840Z Compressing objects:  87% (92/105)
+2026-03-30T15:32:36.8009058Z | Info | Compressing objects:  88% (93/105)
+2026-03-30T15:32:36.8009295Z | Info | Compressing objects:  89% (94/105)
+2026-03-30T15:32:36.8009544Z | Info | Compressing objects:  90% (95/105)
+2026-03-30T15:32:36.8009778Z | Info | Compressing objects:  91% (96/105)
+2026-03-30T15:32:36.8010022Z | Info | Compressing objects:  92% (97/105)
+2026-03-30T15:32:36.8010269Z | Info | Compressing objects:  93% (98/105)
+2026-03-30T15:32:36.8010494Z | Info | Compressing objects:  94% (99/105)
+2026-03-30T15:32:36.8010730Z | Info | Compressing objects:  95% (100/105)
+2026-03-30T15:32:36.8010966Z | Info | Compressing objects:  96% (101/105)
+2026-03-30T15:32:36.8011214Z | Info | Compressing objects:  97% (102/105)
+2026-03-30T15:32:36.8011443Z | Info | Compressing objects:  98% (103/105)
+2026-03-30T15:32:36.8011671Z | Info | Compressing objects:  99% (104/105)
+2026-03-30T15:32:36.8011907Z | Info | Compressing objects: 100% (105/105)
+2026-03-30T15:32:36.8012158Z | Info | Compressing objects: 100% (105/105), done.
+2026-03-30T15:32:45.2110109Z | Info | Total 58147 (delta 177), reused 143 (delta 131), pack-reused 57911 (from 3)
+2026-03-30T15:32:49.4502168Z | Info | Set GEODE_SDK environment variable automatically
+2026-03-30T15:32:49.4963448Z | Info | Updating head
+2026-03-30T15:32:49.5943812Z | Done | Updated head to v5.4.1
+2026-03-30T15:32:49.5944422Z | Done | Successfully installed SDK
+2026-03-30T15:32:49.5945388Z | Info | Please restart your command line to have the GEODE_SDK enviroment variable set.
+2026-03-30T15:32:49.5946741Z | Info | Use `geode sdk install-binaries` to install pre-built binaries
+2026-03-30T15:32:49.6311642Z | Info | Switching to nightly
+2026-03-30T15:32:49.6312121Z | Info | Updating SDK
+2026-03-30T15:32:49.6880391Z | Info | Updating head
+2026-03-30T15:32:49.7811869Z | Info | Switched to latest commit
+2026-03-30T15:32:49.7812314Z | Done | Successfully updated SDK.
+2026-03-30T15:32:49.8136953Z | Info | Installing nightly binaries
+2026-03-30T15:32:49.9248842Z | Info | Found binaries for platform Windows
+2026-03-30T15:32:49.9251744Z | Info | Downloading
+2026-03-30T15:32:50.5312650Z | Done | Binaries installed
+2026-03-30T15:32:50.5643978Z ##[group]Run mkdir -p $HOME/.cache
+2026-03-30T15:32:50.5644335Z [36;1mmkdir -p $HOME/.cache[0m
+2026-03-30T15:32:50.5644542Z [36;1m[0m
+2026-03-30T15:32:50.5644750Z [36;1mNDK_PATH="/usr/local/lib/android/sdk/ndk/"[0m
+2026-03-30T15:32:50.5645036Z [36;1mif [ "" = "" ]; then[0m
+2026-03-30T15:32:50.5645282Z [36;1m  NDK_PATH="$ANDROID_NDK_LATEST_HOME"[0m
+2026-03-30T15:32:50.5645534Z [36;1mfi[0m
+2026-03-30T15:32:50.5645684Z [36;1m[0m
+2026-03-30T15:32:50.5645864Z [36;1mcd "./"[0m
+2026-03-30T15:32:50.5646033Z [36;1mCMAKE_EXTRA_ARGS=""[0m
+2026-03-30T15:32:50.5646247Z [36;1mif [ win = "mac" ]; then[0m
+2026-03-30T15:32:50.5647185Z [36;1m  CMAKE_EXTRA_ARGS="-DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 -DGEODE_DISABLE_PRECOMPILED_HEADERS=OFF -DCMAKE_AR='/usr/bin/ar' -DCMAKE_RANLIB='/usr/bin/ranlib'"[0m
+2026-03-30T15:32:50.5648128Z [36;1melif [ win = "android32" ]; then[0m
+2026-03-30T15:32:50.5649101Z [36;1m  CMAKE_EXTRA_ARGS="-DCMAKE_TOOLCHAIN_FILE=$NDK_PATH/build/cmake/android.toolchain.cmake -DANDROID_STL=c++_shared -DANDROID_ABI=armeabi-v7a -DANDROID_PLATFORM=android-23"[0m
+2026-03-30T15:32:50.5649920Z [36;1melif [ win = "android64" ]; then[0m
+2026-03-30T15:32:50.5650703Z [36;1m  CMAKE_EXTRA_ARGS="-DCMAKE_TOOLCHAIN_FILE=$NDK_PATH/build/cmake/android.toolchain.cmake -DANDROID_STL=c++_shared -DANDROID_ABI=arm64-v8a -DANDROID_PLATFORM=android-23"[0m
+2026-03-30T15:32:50.5651480Z [36;1melif [ win = "ios" ]; then[0m
+2026-03-30T15:32:50.5652677Z [36;1m  CMAKE_EXTRA_ARGS="-DCMAKE_SYSTEM_NAME=iOS -DGEODE_TARGET_PLATFORM=iOS -DGEODE_DISABLE_PRECOMPILED_HEADERS=OFF"[0m
+2026-03-30T15:32:50.5653254Z [36;1mfi[0m
+2026-03-30T15:32:50.5653419Z [36;1mif [ "true" = "true" ]; then[0m
+2026-03-30T15:32:50.5653826Z [36;1m  CMAKE_EXTRA_ARGS="$CMAKE_EXTRA_ARGS -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON"[0m
+2026-03-30T15:32:50.5654224Z [36;1mfi[0m
+2026-03-30T15:32:50.5654426Z [36;1mif [ "false" = "true" ] && [ win = "win" ]; then[0m
+2026-03-30T15:32:50.5654806Z [36;1m  CMAKE_EXTRA_ARGS="$CMAKE_EXTRA_ARGS -DGEODE_BUNDLE_PDB=ON"[0m
+2026-03-30T15:32:50.5655134Z [36;1mfi[0m
+2026-03-30T15:32:50.5655294Z [36;1mif [ -n "sccache" ]; then[0m
+2026-03-30T15:32:50.5655533Z [36;1m  CCACHE_PATH="$(which "sccache")"[0m
+2026-03-30T15:32:50.5656140Z [36;1m  CMAKE_EXTRA_ARGS="$CMAKE_EXTRA_ARGS -DCMAKE_C_COMPILER_LAUNCHER=${CCACHE_PATH} -DCMAKE_CXX_COMPILER_LAUNCHER=${CCACHE_PATH}"[0m
+2026-03-30T15:32:50.5656726Z [36;1mfi[0m
+2026-03-30T15:32:50.5658178Z [36;1mcmake -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DGEODE_CODEGEN_CMAKE_ARGS="-DCMAKE_C_COMPILER=clang;-DCMAKE_CXX_COMPILER=clang++;-G Ninja" -G Ninja $CMAKE_EXTRA_ARGS -DGEODE_DONT_INSTALL_MODS=ON -DGEODE_TARGET_PLATFORM=Win64 [0m
+2026-03-30T15:32:50.5659509Z [36;1mcmake --build build --config RelWithDebInfo  --parallel[0m
+2026-03-30T15:32:50.5659825Z [36;1m[0m
+2026-03-30T15:32:50.5660101Z [36;1mmkdir "D:\a\death-animation-clone\death-animation-clone/output"[0m
+2026-03-30T15:32:50.5660441Z [36;1m[0m
+2026-03-30T15:32:50.5660643Z [36;1mfor file in $(find ./build -name *.geode); do[0m
+2026-03-30T15:32:50.5661046Z [36;1m  cp $file "D:\a\death-animation-clone\death-animation-clone/output"[0m
+2026-03-30T15:32:50.5661682Z [36;1m  if [ win = "linux" ] && [ "false" = "true" ]; then[0m
+2026-03-30T15:32:50.5662047Z [36;1m    if [ win = "android32" ] || [ win = "android64" ]; then[0m
+2026-03-30T15:32:50.5662411Z [36;1m      SO_FILE_NAME="$(basename $file .geode).win.so"[0m
+2026-03-30T15:32:50.5662741Z [36;1m      if [ -f "./build/$SO_FILE_NAME" ]; then[0m
+2026-03-30T15:32:50.5663310Z [36;1m        dump_syms ./build/$SO_FILE_NAME -o "D:\a\death-animation-clone\death-animation-clone/output/$SO_FILE_NAME.sym"[0m
+2026-03-30T15:32:50.5663846Z [36;1m      fi[0m
+2026-03-30T15:32:50.5664004Z [36;1m    fi[0m
+2026-03-30T15:32:50.5664150Z [36;1m  fi[0m
+2026-03-30T15:32:50.5664299Z [36;1mdone[0m
+2026-03-30T15:32:50.5664437Z [36;1m[0m
+2026-03-30T15:32:50.5664588Z [36;1mif [ win = "win" ]; then[0m
+2026-03-30T15:32:50.5664812Z [36;1m  if [ "true" = "true" ]; then[0m
+2026-03-30T15:32:50.5665101Z [36;1m    for file in $(find ./build -name *.pdb); do[0m
+2026-03-30T15:32:50.5665502Z [36;1m      cp $file "D:\a\death-animation-clone\death-animation-clone/output"[0m
+2026-03-30T15:32:50.5665863Z [36;1m    done[0m
+2026-03-30T15:32:50.5666016Z [36;1m  fi[0m
+2026-03-30T15:32:50.5666153Z [36;1mfi[0m
+2026-03-30T15:32:50.5666300Z [36;1m[0m
+2026-03-30T15:32:50.5666640Z [36;1mif [ "false" = "true" ]; then[0m
+2026-03-30T15:32:50.5666935Z [36;1m  for file in $(find ./build -name *.pdb); do[0m
+2026-03-30T15:32:50.5667349Z [36;1m    cp $file "D:\a\death-animation-clone\death-animation-clone/output"[0m
+2026-03-30T15:32:50.5667709Z [36;1m  done[0m
+2026-03-30T15:32:50.5667917Z [36;1m  for file in $(find ./build -name *.dbg); do[0m
+2026-03-30T15:32:50.5668409Z [36;1m    cp $file "D:\a\death-animation-clone\death-animation-clone/output"[0m
+2026-03-30T15:32:50.5668952Z [36;1m  done[0m
+2026-03-30T15:32:50.5669245Z [36;1m  for dir in $(find ./build -name *.dSYM); do[0m
+2026-03-30T15:32:50.5669898Z [36;1m    cp -R $dir "D:\a\death-animation-clone\death-animation-clone/output"[0m
+2026-03-30T15:32:50.5670463Z [36;1m  done[0m
+2026-03-30T15:32:50.5670718Z [36;1mfi[0m
+2026-03-30T15:32:50.5670927Z [36;1m[0m
+2026-03-30T15:32:50.5671378Z [36;1mOUTPUT_DIR="D:\a\death-animation-clone\death-animation-clone/output"[0m
+2026-03-30T15:32:50.5672311Z [36;1mif [ win = "mac" ]; then[0m
+2026-03-30T15:32:50.5672996Z [36;1m  OUTPUT_DIR=$(python3 -c 'import os, sys; print(os.path.realpath(sys.argv[1]))' "$OUTPUT_DIR")[0m
+2026-03-30T15:32:50.5673718Z [36;1melif [ win = "win" ]; then[0m
+2026-03-30T15:32:50.5674113Z [36;1m  OUTPUT_DIR=$(cygpath -wa "$OUTPUT_DIR")[0m
+2026-03-30T15:32:50.5674563Z [36;1melse[0m
+2026-03-30T15:32:50.5674895Z [36;1m  OUTPUT_DIR=$(realpath "$OUTPUT_DIR")[0m
+2026-03-30T15:32:50.5675154Z [36;1mfi[0m
+2026-03-30T15:32:50.5675356Z [36;1mecho "output=$OUTPUT_DIR" >> $GITHUB_OUTPUT[0m
+2026-03-30T15:32:50.5694140Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-03-30T15:32:50.5694547Z env:
+2026-03-30T15:32:50.5694910Z   GEODE_BINDINGS_REPO_PATH: D:\a\death-animation-clone\death-animation-clone/bindings-repo
+2026-03-30T15:32:50.5695759Z   GEODE_SDK: D:\a\death-animation-clone\death-animation-clone/geode-sdk-clone
+2026-03-30T15:32:50.5696577Z   CPM_SOURCE_CACHE: D:\a\death-animation-clone\death-animation-clone/cpm-cache
+2026-03-30T15:32:50.5697244Z ##[endgroup]
+2026-03-30T15:32:58.2910786Z -- The C compiler identification is Clang 20.1.8 with GNU-like command-line
+2026-03-30T15:33:02.7418753Z -- The CXX compiler identification is Clang 20.1.8 with GNU-like command-line
+2026-03-30T15:33:02.9061692Z -- Detecting C compiler ABI info
+2026-03-30T15:33:05.6655798Z -- Detecting C compiler ABI info - done
+2026-03-30T15:33:05.7183779Z -- Check for working C compiler: C:/Program Files/LLVM/bin/clang.exe - skipped
+2026-03-30T15:33:05.7201940Z -- Detecting C compile features
+2026-03-30T15:33:05.7214450Z -- Detecting C compile features - done
+2026-03-30T15:33:05.7478044Z -- Detecting CXX compiler ABI info
+2026-03-30T15:33:06.3532249Z -- Detecting CXX compiler ABI info - done
+2026-03-30T15:33:06.3927476Z -- Check for working CXX compiler: C:/Program Files/LLVM/bin/clang++.exe - skipped
+2026-03-30T15:33:06.3932079Z -- Detecting CXX compile features
+2026-03-30T15:33:06.9340385Z -- Detecting CXX compile features - done
+2026-03-30T15:33:06.9381425Z -- Found Geode: D:\a\death-animation-clone\death-animation-clone/geode-sdk-clone
+2026-03-30T15:33:06.9401102Z -- Version: 5.4.1
+2026-03-30T15:33:07.2129697Z -- Using D:/a/death-animation-clone/death-animation-clone/bindings-repo for bindings repo
+2026-03-30T15:33:07.2131675Z -- Looking for ccache/sccache
+2026-03-30T15:33:07.2132232Z -- Looking for ccache/sccache - detecting variant
+2026-03-30T15:33:07.2132769Z -- Looking for ccache/sccache - detected sccache
+2026-03-30T15:33:07.2133468Z Using sccache with Clang, PCH will be enabled.
+2026-03-30T15:33:07.2133951Z -- Pre-compiled headers - ON
+2026-03-30T15:33:07.2305317Z -- Found Geode CLI: D:/a/death-animation-clone/death-animation-clone/my-epic-geode-cli/geode.exe (version 3.7.4)
+2026-03-30T15:33:07.2332062Z -- CPM: Adding package result@1.4.1 (v1.4.1 to D:/a/death-animation-clone/death-animation-clone/cpm-cache/result/1b9c)
+2026-03-30T15:33:09.0013876Z -- CPM: Adding package json@3.3.0 (v3.3.0 to D:/a/death-animation-clone/death-animation-clone/cpm-cache/json/75ca)
+2026-03-30T15:33:10.4609834Z -- CPM: Adding package nontype_functional@6 (6d1d08c to D:/a/death-animation-clone/death-animation-clone/cpm-cache/nontype_functional/aaa0)
+2026-03-30T15:33:16.2650966Z -- CPM: Adding package fmt@12.1.0 (12.1.0 to D:/a/death-animation-clone/death-animation-clone/cpm-cache/fmt/6226)
+2026-03-30T15:33:17.9163596Z -- {fmt} version: 12.1.0
+2026-03-30T15:33:17.9164485Z -- Build type: RelWithDebInfo
+2026-03-30T15:33:17.9269367Z -- Performing Test HAS_NULLPTR_WARNING
+2026-03-30T15:33:20.3279013Z -- Performing Test HAS_NULLPTR_WARNING - Success
+2026-03-30T15:33:20.3312726Z -- CPM: Adding package asp2@51 (51d3773 to D:/a/death-animation-clone/death-animation-clone/cpm-cache/asp2/4dd3)
+2026-03-30T15:33:21.7952235Z -- CPM: Adding package arc@1.5.5 (v1.5.5 to D:/a/death-animation-clone/death-animation-clone/cpm-cache/arc/70cb)
+2026-03-30T15:33:26.0264407Z -- Arc features: time
+2026-03-30T15:33:26.0301809Z -- CPM: Adding package TulipHook@3.1.11 (v3.1.11 to D:/a/death-animation-clone/death-animation-clone/cpm-cache/tuliphook/37c6)
+2026-03-30T15:33:27.7736366Z -- Performing Test SUPPORTS_W_NO_EVERYTHING
+2026-03-30T15:33:28.0722843Z -- Performing Test SUPPORTS_W_NO_EVERYTHING - Success
+2026-03-30T15:33:28.0742357Z -- Downloading Codegen
+2026-03-30T15:33:28.0742935Z Set SKIP_BUILDING_CODEGEN to OFF to force codegen to build locally.
+2026-03-30T15:33:28.2580699Z -- Downloading Codegen - success
+2026-03-30T15:33:28.2581581Z -- Skipping building Codegen
+2026-03-30T15:33:28.2582000Z -- Running Codegen
+2026-03-30T15:33:28.2583569Z './Codegen' 'Win64' 'D:/a/death-animation-clone/death-animation-clone/bindings-repo/bindings/2.2081' 'D:/a/death-animation-clone/death-animation-clone/build/bindings/bindings'
+2026-03-30T15:33:29.5696617Z -- CPM: Adding package ogg@1.3.6 (v1.3.6 to D:/a/death-animation-clone/death-animation-clone/cpm-cache/ogg/b013)
+2026-03-30T15:33:31.1120054Z CMake Deprecation Warning at cpm-cache/ogg/b013/CMakeLists.txt:1 (cmake_minimum_required):
+2026-03-30T15:33:31.1121270Z   Compatibility with CMake < 3.10 will be removed from a future version of
+2026-03-30T15:33:31.1121945Z   CMake.
+2026-03-30T15:33:31.1122086Z 
+2026-03-30T15:33:31.1122434Z   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+2026-03-30T15:33:31.1123302Z   to tell CMake that the project requires at least <min> but has been updated
+2026-03-30T15:33:31.1124052Z   to work with policies introduced by <max> or earlier.
+2026-03-30T15:33:31.1124442Z 
+2026-03-30T15:33:31.1124449Z 
+2026-03-30T15:33:31.1172039Z -- Configuring ogg 1.3.6
+2026-03-30T15:33:31.1174198Z -- Looking for include file inttypes.h
+2026-03-30T15:33:31.4432872Z -- Looking for include file inttypes.h - found
+2026-03-30T15:33:31.4434387Z -- Looking for include file stdint.h
+2026-03-30T15:33:31.6508597Z -- Looking for include file stdint.h - found
+2026-03-30T15:33:31.6510137Z -- Looking for include file sys/types.h
+2026-03-30T15:33:31.8809817Z -- Looking for include file sys/types.h - found
+2026-03-30T15:33:31.8941012Z -- Looking for sys/types.h
+2026-03-30T15:33:32.1323864Z -- Looking for sys/types.h - found
+2026-03-30T15:33:32.1325661Z -- Looking for stdint.h
+2026-03-30T15:33:32.3708630Z -- Looking for stdint.h - found
+2026-03-30T15:33:32.3710613Z -- Looking for stddef.h
+2026-03-30T15:33:32.6450780Z -- Looking for stddef.h - found
+2026-03-30T15:33:32.6451355Z -- Check size of int16_t
+2026-03-30T15:33:32.9382123Z -- Check size of int16_t - done
+2026-03-30T15:33:32.9386323Z -- Check size of uint16_t
+2026-03-30T15:33:33.1968209Z -- Check size of uint16_t - done
+2026-03-30T15:33:33.1972713Z -- Check size of u_int16_t
+2026-03-30T15:33:33.4115639Z -- Check size of u_int16_t - failed
+2026-03-30T15:33:33.4122155Z -- Check size of int32_t
+2026-03-30T15:33:33.6629687Z -- Check size of int32_t - done
+2026-03-30T15:33:33.6634451Z -- Check size of uint32_t
+2026-03-30T15:33:33.9095925Z -- Check size of uint32_t - done
+2026-03-30T15:33:33.9100272Z -- Check size of u_int32_t
+2026-03-30T15:33:34.0521952Z -- Check size of u_int32_t - failed
+2026-03-30T15:33:34.0526572Z -- Check size of int64_t
+2026-03-30T15:33:34.2757858Z -- Check size of int64_t - done
+2026-03-30T15:33:34.2761981Z -- Check size of short
+2026-03-30T15:33:34.5351695Z -- Check size of short - done
+2026-03-30T15:33:34.5356524Z -- Check size of int
+2026-03-30T15:33:34.8019997Z -- Check size of int - done
+2026-03-30T15:33:34.8024538Z -- Check size of long
+2026-03-30T15:33:35.0915657Z -- Check size of long - done
+2026-03-30T15:33:35.0919892Z -- Check size of long long
+2026-03-30T15:33:35.3153716Z -- Check size of long long - done
+2026-03-30T15:33:35.3750501Z -- CPM: Adding package opus@1.5.2 (v1.5.2 to D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa)
+2026-03-30T15:33:38.5839704Z -- Found Git: C:/Program Files/Git/mingw64/bin/git.exe (found version "2.53.0.windows.2")
+2026-03-30T15:33:38.6052851Z -- Opus package version from git repo: 1.5.2
+2026-03-30T15:33:38.6081067Z -- Opus project version: 1.5.2
+2026-03-30T15:33:38.6081367Z -- Performing Test VLA_SUPPORTED
+2026-03-30T15:33:40.6740655Z -- Performing Test VLA_SUPPORTED -- success
+2026-03-30T15:33:40.6745776Z -- Looking for alloca.h
+2026-03-30T15:33:41.1950326Z -- Looking for alloca.h - not found
+2026-03-30T15:33:41.2644653Z -- Looking for alloca
+2026-03-30T15:33:42.0696750Z -- Looking for alloca - found
+2026-03-30T15:33:42.1104032Z -- Looking for floor in m
+2026-03-30T15:33:42.3883435Z -- Looking for floor in m - not found
+2026-03-30T15:33:42.3886193Z -- Looking for lrintf
+2026-03-30T15:33:42.6734565Z -- Looking for lrintf - found
+2026-03-30T15:33:42.6738417Z -- Looking for lrint
+2026-03-30T15:33:42.9361175Z -- Looking for lrint - found
+2026-03-30T15:33:42.9366325Z -- Performing Test CPU_INFO_BY_ASM_SUPPORTED
+2026-03-30T15:33:44.0953386Z -- Performing Test CPU_INFO_BY_ASM_SUPPORTED -- success
+2026-03-30T15:33:44.0954047Z -- Looking for cpuid.h
+2026-03-30T15:33:44.8706524Z -- Looking for cpuid.h - found
+2026-03-30T15:33:44.8707015Z -- Performing Test CPU_INFO_BY_C_SUPPORTED
+2026-03-30T15:33:46.4648324Z -- Performing Test CPU_INFO_BY_C_SUPPORTED -- success
+2026-03-30T15:33:46.4648918Z -- Check SIMD support by compiler
+2026-03-30T15:33:46.4650685Z -- Looking for xmmintrin.h
+2026-03-30T15:33:47.5245592Z -- Looking for xmmintrin.h - found
+2026-03-30T15:33:47.6214619Z -- Performing Test SSE1_SUPPORTED
+2026-03-30T15:33:48.2719053Z -- Performing Test SSE1_SUPPORTED - Success
+2026-03-30T15:33:48.2722602Z -- Looking for emmintrin.h
+2026-03-30T15:33:48.5553868Z -- Looking for emmintrin.h - found
+2026-03-30T15:33:48.5567134Z -- Performing Test SSE2_SUPPORTED
+2026-03-30T15:33:48.7913739Z -- Performing Test SSE2_SUPPORTED - Success
+2026-03-30T15:33:48.7917521Z -- Looking for smmintrin.h
+2026-03-30T15:33:49.1360894Z -- Looking for smmintrin.h - found
+2026-03-30T15:33:49.1373854Z -- Performing Test SSE4_1_SUPPORTED
+2026-03-30T15:33:49.3791107Z -- Performing Test SSE4_1_SUPPORTED - Success
+2026-03-30T15:33:49.3796424Z -- Looking for immintrin.h
+2026-03-30T15:33:50.4462694Z -- Looking for immintrin.h - found
+2026-03-30T15:33:50.4477769Z -- Performing Test AVX2_SUPPORTED
+2026-03-30T15:33:50.6734350Z -- Performing Test AVX2_SUPPORTED - Success
+2026-03-30T15:33:50.6751186Z -- Performing Test FAST_MATH_SUPPORTED
+2026-03-30T15:33:50.9047398Z -- Performing Test FAST_MATH_SUPPORTED - Success
+2026-03-30T15:33:50.9061876Z -- Performing Test STACK_PROTECTOR_SUPPORTED
+2026-03-30T15:33:51.1294686Z -- Performing Test STACK_PROTECTOR_SUPPORTED - Success
+2026-03-30T15:33:51.1309017Z -- Performing Test HIDDEN_VISIBILITY_SUPPORTED
+2026-03-30T15:33:51.3716181Z -- Performing Test HIDDEN_VISIBILITY_SUPPORTED - Success
+2026-03-30T15:33:51.3730210Z -- Performing Test Wall_SUPPORTED
+2026-03-30T15:33:51.6141367Z -- Performing Test Wall_SUPPORTED - Success
+2026-03-30T15:33:51.6153873Z -- Performing Test W_SUPPORTED
+2026-03-30T15:33:51.8496568Z -- Performing Test W_SUPPORTED - Success
+2026-03-30T15:33:51.8511846Z -- Performing Test Wstrictprototypes_SUPPORTED
+2026-03-30T15:33:52.1103189Z -- Performing Test Wstrictprototypes_SUPPORTED - Success
+2026-03-30T15:33:52.1115781Z -- Performing Test Wextra_SUPPORTED
+2026-03-30T15:33:52.3380379Z -- Performing Test Wextra_SUPPORTED - Success
+2026-03-30T15:33:52.3391925Z -- Performing Test Wcastalign_SUPPORTED
+2026-03-30T15:33:52.5868246Z -- Performing Test Wcastalign_SUPPORTED - Success
+2026-03-30T15:33:52.5880772Z -- Performing Test Wnestedexterns_SUPPORTED
+2026-03-30T15:33:52.8270006Z -- Performing Test Wnestedexterns_SUPPORTED - Success
+2026-03-30T15:33:52.8282864Z -- Performing Test Wshadow_SUPPORTED
+2026-03-30T15:33:53.0568403Z -- Performing Test Wshadow_SUPPORTED - Success
+2026-03-30T15:33:53.1142340Z -- The following features have been enabled:
+2026-03-30T15:33:53.1142787Z 
+2026-03-30T15:33:53.1142931Z  * OPUS_BUILD_TESTING, build tests.
+2026-03-30T15:33:53.1144348Z  * OPUS_ENABLE_FLOAT_API, compile with the floating point API (for machines with float library).
+2026-03-30T15:33:53.1145767Z  * OPUS_HARDENING, run-time checks that are cheap and safe for use in production.
+2026-03-30T15:33:53.1147077Z  * OPUS_INSTALL_PKG_CONFIG_MODULE, install pkg-config module.
+2026-03-30T15:33:53.1147860Z  * OPUS_INSTALL_CMAKE_CONFIG_MODULE, install CMake package config module.
+2026-03-30T15:33:53.1148622Z  * OPUS_VAR_ARRAYS, use variable length arrays for stack arrays.
+2026-03-30T15:33:53.1149233Z  * OPUS_STACK_PROTECTOR, use stack protection.
+2026-03-30T15:33:53.1149844Z  * OPUS_FORTIFY_SOURCE, add protection against buffer overflows.
+2026-03-30T15:33:53.1150919Z  * OPUS_X86_MAY_HAVE_SSE, does runtime check for SSE1 support.
+2026-03-30T15:33:53.1151566Z  * OPUS_X86_MAY_HAVE_SSE2, does runtime check for SSE2 support.
+2026-03-30T15:33:53.1152246Z  * OPUS_X86_MAY_HAVE_SSE4_1, does runtime check for SSE4.1 support.
+2026-03-30T15:33:53.1152993Z  * OPUS_X86_MAY_HAVE_AVX2, does runtime check for AVX FMA AVX2 support.
+2026-03-30T15:33:53.1153855Z  * OPUS_X86_PRESUME_SSE, assume target CPU has SSE1 support (override runtime check).
+2026-03-30T15:33:53.1154833Z  * OPUS_X86_PRESUME_SSE2, assume target CPU has SSE2 support (override runtime check).
+2026-03-30T15:33:53.1155417Z 
+2026-03-30T15:33:53.1155614Z -- The following OPTIONAL packages have been found:
+2026-03-30T15:33:53.1155985Z 
+2026-03-30T15:33:53.1156078Z  * Git
+2026-03-30T15:33:53.1156223Z 
+2026-03-30T15:33:53.1156394Z -- The following features have been disabled:
+2026-03-30T15:33:53.1156736Z 
+2026-03-30T15:33:53.1156927Z  * OPUS_BUILD_SHARED_LIBRARY, build shared library.
+2026-03-30T15:33:53.1157597Z  * OPUS_CUSTOM_MODES, enable non-Opus modes, e.g. 44.1 kHz & 2^n frames.
+2026-03-30T15:33:53.1158222Z  * OPUS_BUILD_PROGRAMS, build programs.
+2026-03-30T15:33:53.1158813Z  * OPUS_DISABLE_INTRINSICS, disable all intrinsics optimizations.
+2026-03-30T15:33:53.1159630Z  * OPUS_FIXED_POINT, compile as fixed-point (for machines without a fast enough FPU).
+2026-03-30T15:33:53.1160827Z  * OPUS_FLOAT_APPROX, enable floating point approximations (Ensure your platform supports IEEE 754 before enabling).
+2026-03-30T15:33:53.1161868Z  * OPUS_ASSERTIONS, additional software error checking.
+2026-03-30T15:33:53.1162657Z  * OPUS_FUZZING, causes the encoder to make random decisions (do not use in production).
+2026-03-30T15:33:53.1163640Z  * OPUS_CHECK_ASM, enable bit-exactness checks between optimized and c implementations.
+2026-03-30T15:33:53.1164592Z  * OPUS_DNN_FLOAT_DEBUG, Run DNN computations as float for debugging purposes.
+2026-03-30T15:33:53.1165258Z  * OPUS_DRED, enable DRED.
+2026-03-30T15:33:53.1165595Z  * OPUS_OSCE, enable OSCE.
+2026-03-30T15:33:53.1166049Z  * OPUS_FIXED_POINT_DEBUG, debug fixed-point implementation.
+2026-03-30T15:33:53.1166786Z  * OPUS_USE_ALLOCA, use alloca for stack arrays (on non-C99 compilers).
+2026-03-30T15:33:53.1167955Z  * OPUS_NONTHREADSAFE_PSEUDOSTACK, use a non threadsafe pseudostack when neither variable length arrays or alloca is supported.
+2026-03-30T15:33:53.1169490Z  * OPUS_FAST_MATH, enable fast math (unsupported and discouraged use, as code is not well tested with this build option).
+2026-03-30T15:33:53.1171058Z  * OPUS_X86_PRESUME_SSE4_1, assume target CPU has SSE4.1 support (override runtime check).
+2026-03-30T15:33:53.1172104Z  * OPUS_X86_PRESUME_AVX2, assume target CPU has AVX FMA AVX2 support (override runtime check).
+2026-03-30T15:33:53.1172736Z 
+2026-03-30T15:33:53.1545442Z -- CPM: Adding package opusfile@8890 (8890ea3 to D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1)
+2026-03-30T15:33:54.8765039Z -- Opus package version from git repo: 0.12-54-g8890ea3
+2026-03-30T15:33:54.8765470Z -- Opus project version: 0.12
+2026-03-30T15:33:54.8837880Z -- Looking for lrintf in m
+2026-03-30T15:33:55.0918475Z -- Looking for lrintf in m - not found
+2026-03-30T15:33:55.0921230Z -- Looking for lrintf
+2026-03-30T15:33:55.3418020Z -- Looking for lrintf - found
+2026-03-30T15:33:55.3475450Z -- Setting up DeathAnimations
+2026-03-30T15:33:55.3613890Z -- Mod zilko.death_animations is compiling for Geode version 5.4.1
+2026-03-30T15:33:55.3615271Z -- Mod zilko.death_animations is compiling for Geometry Dash version 2.2081
+2026-03-30T15:33:55.3873560Z | Info | Fetching dependency from index
+2026-03-30T15:33:55.5715190Z | Info | Dependency found: geode.node-ids, version 1.23.3
+2026-03-30T15:33:55.5715787Z | Info | Downloading dependency
+2026-03-30T15:33:55.8646408Z | Info | Success
+2026-03-30T15:33:55.8646754Z | Info | Writing dependency to temp file
+2026-03-30T15:33:55.8672791Z | Info | Dependency 'geode.node-ids' found on the index, installing (version '1.23.3')
+2026-03-30T15:33:55.9045207Z | Done | All dependencies resolved
+2026-03-30T15:33:55.9083406Z -- Skipping installing DeathAnimations
+2026-03-30T15:33:55.9104351Z -- Configuring done (64.7s)
+2026-03-30T15:33:56.3002102Z CMake Warning (dev) at cpm-cache/ogg/b013/CMakeLists.txt:89 (add_library):
+2026-03-30T15:33:56.3003455Z   Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+2026-03-30T15:33:56.3005323Z   enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+2026-03-30T15:33:56.3006100Z   cmake_policy command to set the policy and suppress this warning.
+2026-03-30T15:33:56.3006474Z 
+2026-03-30T15:33:56.3006746Z   INTERPROCEDURAL_OPTIMIZATION property will be ignored for target 'ogg'.
+2026-03-30T15:33:56.3007410Z This warning is for project developers.  Use -Wno-dev to suppress it.
+2026-03-30T15:33:56.3007790Z 
+2026-03-30T15:33:56.3018977Z CMake Warning (dev) at cpm-cache/ogg/b013/CMakeLists.txt:182 (add_executable):
+2026-03-30T15:33:56.3019652Z   Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+2026-03-30T15:33:56.3020174Z   enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+2026-03-30T15:33:56.3020974Z   cmake_policy command to set the policy and suppress this warning.
+2026-03-30T15:33:56.3021643Z 
+2026-03-30T15:33:56.3021908Z   INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+2026-03-30T15:33:56.3022476Z   'test_bitwise'.
+2026-03-30T15:33:56.3022748Z This warning is for project developers.  Use -Wno-dev to suppress it.
+2026-03-30T15:33:56.3023007Z 
+2026-03-30T15:33:56.3035805Z CMake Warning (dev) at cpm-cache/ogg/b013/CMakeLists.txt:190 (add_executable):
+2026-03-30T15:33:56.3036418Z   Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+2026-03-30T15:33:56.3037469Z   enabled.  Run "cmake --help-policy CMP0069" for policy details.  Use the
+2026-03-30T15:33:56.3038899Z   cmake_policy command to set the policy and suppress this warning.
+2026-03-30T15:33:56.3039334Z 
+2026-03-30T15:33:56.3039522Z   INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+2026-03-30T15:33:56.3039872Z   'test_framing'.
+2026-03-30T15:33:56.3040147Z This warning is for project developers.  Use -Wno-dev to suppress it.
+2026-03-30T15:33:56.3040428Z 
+2026-03-30T15:33:56.3610287Z -- Generating done (0.4s)
+2026-03-30T15:33:56.3627439Z -- Build files have been written to: D:/a/death-animation-clone/death-animation-clone/build
+2026-03-30T15:33:56.4383795Z [0/2] Re-checking globbed directories...
+2026-03-30T15:33:57.1417277Z [1/216] Building C object _deps/ogg-build/CMakeFiles/ogg.dir/src/bitwise.c.obj
+2026-03-30T15:33:57.2183849Z [2/216] Building C object _deps/ogg-build/CMakeFiles/ogg.dir/src/framing.c.obj
+2026-03-30T15:33:57.3732215Z [3/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/src/opus.c.obj
+2026-03-30T15:33:57.8843062Z [4/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/src/opus_decoder.c.obj
+2026-03-30T15:33:58.0607568Z [5/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/src/opus_encoder.c.obj
+2026-03-30T15:33:58.0885753Z [6/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/src/extensions.c.obj
+2026-03-30T15:33:58.2738571Z [7/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/src/opus_multistream.c.obj
+2026-03-30T15:33:58.4874164Z [8/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/src/opus_multistream_decoder.c.obj
+2026-03-30T15:33:58.6930991Z [9/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/src/repacketizer.c.obj
+2026-03-30T15:33:58.7174947Z [10/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/src/opus_multistream_encoder.c.obj
+2026-03-30T15:33:58.8796833Z [11/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/src/opus_projection_encoder.c.obj
+2026-03-30T15:33:58.8945919Z [12/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/src/opus_projection_decoder.c.obj
+2026-03-30T15:33:59.1092024Z [13/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/src/mapping_matrix.c.obj
+2026-03-30T15:33:59.2540076Z [14/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/src/mlp.c.obj
+2026-03-30T15:33:59.3654298Z [15/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/src/mlp_data.c.obj
+2026-03-30T15:33:59.5497617Z [16/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/src/analysis.c.obj
+2026-03-30T15:33:59.9244418Z [17/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/CNG.c.obj
+2026-03-30T15:34:00.0873998Z [18/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/code_signs.c.obj
+2026-03-30T15:34:00.4961247Z [19/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/init_decoder.c.obj
+2026-03-30T15:34:00.6910310Z [20/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/decode_core.c.obj
+2026-03-30T15:34:03.0003720Z [21/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/decode_frame.c.obj
+2026-03-30T15:34:03.0351368Z [22/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/decode_parameters.c.obj
+2026-03-30T15:34:04.7167216Z [23/216] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.obj
+2026-03-30T15:34:04.7248647Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/fmt/6226/src/format.cc:8:
+2026-03-30T15:34:04.7276553Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/fmt/6226/include\fmt/format-inl.h:23:
+2026-03-30T15:34:04.7603195Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/fmt/6226/include\fmt\format.h:41:
+2026-03-30T15:34:04.7605303Z D:/a/death-animation-clone/death-animation-clone/cpm-cache/fmt/6226/include\fmt\base.h:930:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+2026-03-30T15:34:04.7610713Z   930 |     isalpha('x', loc);
+2026-03-30T15:34:04.7664602Z       |     ^~~~~~~ ~~~~~~~~
+2026-03-30T15:34:04.7932614Z D:/a/death-animation-clone/death-animation-clone/cpm-cache/fmt/6226/src/format.cc:13:30: note: in instantiation of function template specialization 'fmt::locale_ref::locale_ref<std::locale, 0>' requested here
+2026-03-30T15:34:04.7942941Z    13 | template FMT_API locale_ref::locale_ref(const std::locale& loc);  // DEPRECATED!
+2026-03-30T15:34:04.7987708Z       |                              ^
+2026-03-30T15:34:04.8259799Z 1 warning generated.
+2026-03-30T15:34:05.0401188Z [24/216] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.obj
+2026-03-30T15:34:05.3051218Z [25/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/decode_indices.c.obj
+2026-03-30T15:34:05.6209244Z [26/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/decode_pulses.c.obj
+2026-03-30T15:34:06.2132297Z [27/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/decoder_set_fs.c.obj
+2026-03-30T15:34:06.3160749Z [28/216] Linking CXX static library _deps\fmt-build\fmt.lib
+2026-03-30T15:34:06.6205293Z [29/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/dec_API.c.obj
+2026-03-30T15:34:06.8473709Z [30/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/enc_API.c.obj
+2026-03-30T15:34:07.7165369Z [31/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/encode_indices.c.obj
+2026-03-30T15:34:08.0320276Z [32/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/encode_pulses.c.obj
+2026-03-30T15:34:08.3011319Z [33/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/gain_quant.c.obj
+2026-03-30T15:34:08.5866863Z [34/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/interpolate.c.obj
+2026-03-30T15:34:09.3947320Z [35/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/LP_variable_cutoff.c.obj
+2026-03-30T15:34:09.7039676Z [36/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/NLSF_decode.c.obj
+2026-03-30T15:34:09.9462959Z [37/216] Building CXX object _deps/arc-build/CMakeFiles/arc.dir/Unity/unity_0_cxx.cxx.obj
+2026-03-30T15:34:10.1068744Z [38/216] Building CXX object _deps/asp2-build/CMakeFiles/asp.dir/Unity/unity_0_cxx.cxx.obj
+2026-03-30T15:34:10.1202230Z [39/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/NSQ.c.obj
+2026-03-30T15:34:10.5139613Z [40/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/NSQ_del_dec.c.obj
+2026-03-30T15:34:10.5913103Z [41/216] Linking CXX static library _deps\asp2-build\asp.lib
+2026-03-30T15:34:10.8939604Z [42/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/PLC.c.obj
+2026-03-30T15:34:11.0474111Z [43/216] Linking CXX static library _deps\arc-build\arc.lib
+2026-03-30T15:34:11.0584118Z [44/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/tables_gain.c.obj
+2026-03-30T15:34:11.1257300Z [45/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/shell_coder.c.obj
+2026-03-30T15:34:11.5732990Z [46/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/tables_LTP.c.obj
+2026-03-30T15:34:11.6865105Z [47/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/tables_NLSF_CB_NB_MB.c.obj
+2026-03-30T15:34:12.1162432Z [48/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/tables_NLSF_CB_WB.c.obj
+2026-03-30T15:34:12.2120972Z [49/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/tables_other.c.obj
+2026-03-30T15:34:12.2313283Z [50/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/tables_pitch_lag.c.obj
+2026-03-30T15:34:12.9009475Z [51/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/tables_pulses_per_block.c.obj
+2026-03-30T15:34:13.0496809Z [52/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/VAD.c.obj
+2026-03-30T15:34:13.2331487Z [53/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/control_audio_bandwidth.c.obj
+2026-03-30T15:34:13.4724327Z [54/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/quant_LTP_gains.c.obj
+2026-03-30T15:34:13.5094149Z [55/216] Running Codegen
+2026-03-30T15:34:13.5939160Z [56/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/VQ_WMat_EC.c.obj
+2026-03-30T15:34:14.1187349Z [57/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/NLSF_encode.c.obj
+2026-03-30T15:34:14.1810428Z [58/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/HP_variable_cutoff.c.obj
+2026-03-30T15:34:14.2123708Z [59/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/NLSF_VQ.c.obj
+2026-03-30T15:34:14.6957196Z [60/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/NLSF_unpack.c.obj
+2026-03-30T15:34:14.8054549Z [61/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/NLSF_del_dec_quant.c.obj
+2026-03-30T15:34:15.2217752Z [62/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/process_NLSFs.c.obj
+2026-03-30T15:34:15.2771680Z [63/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/stereo_LR_to_MS.c.obj
+2026-03-30T15:34:15.3576906Z [64/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/stereo_MS_to_LR.c.obj
+2026-03-30T15:34:15.6537290Z [65/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/check_control_input.c.obj
+2026-03-30T15:34:15.9517339Z [66/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/control_SNR.c.obj
+2026-03-30T15:34:16.3008043Z [67/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/init_encoder.c.obj
+2026-03-30T15:34:16.4468182Z [68/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/control_codec.c.obj
+2026-03-30T15:34:16.5812546Z [69/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/A2NLSF.c.obj
+2026-03-30T15:34:16.7449332Z [70/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/ana_filt_bank_1.c.obj
+2026-03-30T15:34:17.0671039Z [71/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/biquad_alt.c.obj
+2026-03-30T15:34:17.1181838Z [72/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/debug.c.obj
+2026-03-30T15:34:17.2044965Z [73/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/bwexpander_32.c.obj
+2026-03-30T15:34:17.4247937Z [74/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/bwexpander.c.obj
+2026-03-30T15:34:17.7997622Z [75/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/decode_pitch.c.obj
+2026-03-30T15:34:18.0000761Z [76/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/inner_prod_aligned.c.obj
+2026-03-30T15:34:18.0775345Z [77/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/lin2log.c.obj
+2026-03-30T15:34:18.3535559Z [78/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/log2lin.c.obj
+2026-03-30T15:34:18.5332365Z [79/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/LPC_analysis_filter.c.obj
+2026-03-30T15:34:18.6881468Z [80/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/LPC_inv_pred_gain.c.obj
+2026-03-30T15:34:18.9551205Z [81/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/table_LSF_cos.c.obj
+2026-03-30T15:34:19.1063416Z [82/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/NLSF2A.c.obj
+2026-03-30T15:34:19.2424951Z [83/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/NLSF_stabilize.c.obj
+2026-03-30T15:34:19.5625593Z [84/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/NLSF_VQ_weights_laroia.c.obj
+2026-03-30T15:34:19.6752705Z [85/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/pitch_est_tables.c.obj
+2026-03-30T15:34:19.9762116Z [86/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/resampler.c.obj
+2026-03-30T15:34:20.0800505Z [87/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/resampler_down2_3.c.obj
+2026-03-30T15:34:20.2323456Z [88/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/resampler_down2.c.obj
+2026-03-30T15:34:20.4755187Z [89/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/resampler_private_AR2.c.obj
+2026-03-30T15:34:20.6878191Z [90/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/resampler_private_down_FIR.c.obj
+2026-03-30T15:34:20.9605066Z [91/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/resampler_private_IIR_FIR.c.obj
+2026-03-30T15:34:20.9912057Z [92/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/resampler_private_up2_HQ.c.obj
+2026-03-30T15:34:21.1568467Z [93/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/resampler_rom.c.obj
+2026-03-30T15:34:21.4724516Z [94/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/sigm_Q15.c.obj
+2026-03-30T15:34:21.5561324Z [95/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/sort.c.obj
+2026-03-30T15:34:21.9548455Z [96/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/sum_sqr_shift.c.obj
+2026-03-30T15:34:22.0069030Z [97/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/stereo_decode_pred.c.obj
+2026-03-30T15:34:22.1000944Z [98/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/stereo_encode_pred.c.obj
+2026-03-30T15:34:22.5126457Z [99/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/stereo_find_predictor.c.obj
+2026-03-30T15:34:22.5749010Z [100/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/stereo_quant_pred.c.obj
+2026-03-30T15:34:22.8392330Z [101/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/LPC_fit.c.obj
+2026-03-30T15:34:23.1296754Z [102/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/celt.c.obj
+2026-03-30T15:34:23.2289106Z [103/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/bands.c.obj
+2026-03-30T15:34:23.2942964Z [104/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/celt_encoder.c.obj
+2026-03-30T15:34:23.3217404Z [105/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/cwrs.c.obj
+2026-03-30T15:34:23.3813696Z [106/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/entcode.c.obj
+2026-03-30T15:34:23.4574575Z [107/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/entdec.c.obj
+2026-03-30T15:34:23.6138047Z [108/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/entenc.c.obj
+2026-03-30T15:34:23.7359552Z [109/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/mathops.c.obj
+2026-03-30T15:34:23.7398221Z [110/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/laplace.c.obj
+2026-03-30T15:34:23.9350386Z [111/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/celt_decoder.c.obj
+2026-03-30T15:34:24.3241684Z [112/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/kiss_fft.c.obj
+2026-03-30T15:34:24.5245185Z [113/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/mdct.c.obj
+2026-03-30T15:34:24.5892051Z [114/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/modes.c.obj
+2026-03-30T15:34:24.9075219Z [115/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/celt_lpc.c.obj
+2026-03-30T15:34:24.9530407Z [116/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/pitch.c.obj
+2026-03-30T15:34:25.1761481Z [117/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/quant_bands.c.obj
+2026-03-30T15:34:25.5505860Z [118/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/rate.c.obj
+2026-03-30T15:34:25.6734123Z [119/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/vq.c.obj
+2026-03-30T15:34:25.7356990Z [120/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/apply_sine_window_FLP.c.obj
+2026-03-30T15:34:25.9756471Z [121/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/corrMatrix_FLP.c.obj
+2026-03-30T15:34:26.3100869Z [122/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/encode_frame_FLP.c.obj
+2026-03-30T15:34:26.5135978Z [123/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/find_LPC_FLP.c.obj
+2026-03-30T15:34:26.5639693Z [124/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/find_LTP_FLP.c.obj
+2026-03-30T15:34:26.7541935Z [125/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/find_pitch_lags_FLP.c.obj
+2026-03-30T15:34:27.0849883Z [126/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/find_pred_coefs_FLP.c.obj
+2026-03-30T15:34:27.1100789Z [127/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/LPC_analysis_filter_FLP.c.obj
+2026-03-30T15:34:27.5543891Z [128/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/LTP_analysis_filter_FLP.c.obj
+2026-03-30T15:34:27.6565703Z [129/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/LTP_scale_ctrl_FLP.c.obj
+2026-03-30T15:34:27.7112153Z [130/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/noise_shape_analysis_FLP.c.obj
+2026-03-30T15:34:28.1197976Z [131/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/process_gains_FLP.c.obj
+2026-03-30T15:34:28.1985711Z [132/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/regularize_correlations_FLP.c.obj
+2026-03-30T15:34:28.2781524Z [133/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/residual_energy_FLP.c.obj
+2026-03-30T15:34:28.6863268Z [134/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/warped_autocorrelation_FLP.c.obj
+2026-03-30T15:34:28.7990829Z [135/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/wrappers_FLP.c.obj
+2026-03-30T15:34:29.0887759Z [136/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/autocorrelation_FLP.c.obj
+2026-03-30T15:34:29.2406756Z [137/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/burg_modified_FLP.c.obj
+2026-03-30T15:34:29.2423953Z [138/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/bwexpander_FLP.c.obj
+2026-03-30T15:34:29.3117370Z [139/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/energy_FLP.c.obj
+2026-03-30T15:34:29.9674677Z [140/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/inner_product_FLP.c.obj
+2026-03-30T15:34:30.0131353Z [141/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/k2a_FLP.c.obj
+2026-03-30T15:34:30.0323558Z [142/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/LPC_inv_pred_gain_FLP.c.obj
+2026-03-30T15:34:30.3458719Z [143/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/pitch_analysis_core_FLP.c.obj
+2026-03-30T15:34:30.5372962Z [144/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/scale_copy_vector_FLP.c.obj
+2026-03-30T15:34:30.6058586Z [145/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/scale_vector_FLP.c.obj
+2026-03-30T15:34:31.0163082Z [146/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/schur_FLP.c.obj
+2026-03-30T15:34:31.0831148Z [147/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/sort_FLP.c.obj
+2026-03-30T15:34:31.1549715Z [148/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/x86/x86cpu.c.obj
+2026-03-30T15:34:31.5841204Z [149/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/x86/x86_celt_map.c.obj
+2026-03-30T15:34:31.6786387Z [150/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/x86/x86_silk_map.c.obj
+2026-03-30T15:34:31.9934923Z [151/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/x86/pitch_sse.c.obj
+2026-03-30T15:34:32.0815640Z [152/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/x86/pitch_sse2.c.obj
+2026-03-30T15:34:32.1375586Z [153/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/x86/vq_sse2.c.obj
+2026-03-30T15:34:32.1949338Z [154/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/x86/celt_lpc_sse4_1.c.obj
+2026-03-30T15:34:32.8486681Z [155/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/x86/pitch_sse4_1.c.obj
+2026-03-30T15:34:33.0297308Z [156/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/x86/NSQ_sse4_1.c.obj
+2026-03-30T15:34:33.0785317Z [157/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/x86/NSQ_del_dec_sse4_1.c.obj
+2026-03-30T15:34:33.1613001Z [158/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/x86/VAD_sse4_1.c.obj
+2026-03-30T15:34:33.4109816Z [159/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/x86/VQ_WMat_EC_sse4_1.c.obj
+2026-03-30T15:34:33.5951914Z [160/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/celt/x86/pitch_avx.c.obj
+2026-03-30T15:34:34.1790232Z [161/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/float/x86/inner_product_FLP_avx2.c.obj
+2026-03-30T15:34:34.2230634Z [162/216] Building C object _deps/opus-build/CMakeFiles/opus.dir/silk/x86/NSQ_del_dec_avx2.c.obj
+2026-03-30T15:34:34.2247626Z D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/silk/x86/NSQ_del_dec_avx2.c:961:26: warning: cast from 'opus_int32 *' (aka 'int *') to '__m128i *' increases required alignment from 4 to 16 [-Wcast-align]
+2026-03-30T15:34:34.2387952Z   961 |         _mm_storeu_si128((__m128i*)&x_sc_Q10[i], silk_cvtepi64_epi32_high(x));
+2026-03-30T15:34:34.2453311Z       |                          ^~~~~~~~~~~~~~~~~~~~~~
+2026-03-30T15:34:34.2471574Z D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/silk/x86/NSQ_del_dec_avx2.c:988:30: warning: cast from 'opus_int32 *' (aka 'int *') to '__m128i *' increases required alignment from 4 to 16 [-Wcast-align]
+2026-03-30T15:34:34.2475239Z   988 |             _mm_storeu_si128((__m128i*)p, silk_mm_smulww_epi32(_mm_loadu_si128((__m128i*)p), gain_adj_Q16));
+2026-03-30T15:34:34.2476874Z       |                              ^~~~~~~~~~~
+2026-03-30T15:34:34.2480985Z D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/silk/x86/NSQ_del_dec_avx2.c:988:80: warning: cast from 'opus_int32 *' (aka 'int *') to '__m128i *' increases required alignment from 4 to 16 [-Wcast-align]
+2026-03-30T15:34:34.2483038Z   988 |             _mm_storeu_si128((__m128i*)p, silk_mm_smulww_epi32(_mm_loadu_si128((__m128i*)p), gain_adj_Q16));
+2026-03-30T15:34:34.2484006Z       |                                                                                ^~~~~~~~~~~
+2026-03-30T15:34:34.2485877Z D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/silk/x86/NSQ_del_dec_avx2.c:1043:62: warning: cast from 'const opus_int16 *' (aka 'const short *') to '__m128i *' increases required alignment from 2 to 16 [-Wcast-align]
+2026-03-30T15:34:34.2491113Z  1043 |         __m256i in_v = _mm256_cvtepi16_epi32(_mm_loadu_si128((__m128i*)&in_ptr[-8]));
+2026-03-30T15:34:34.2492412Z       |                                                              ^~~~~~~~~~~~~~~~~~~~~
+2026-03-30T15:34:34.2494359Z D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/silk/x86/NSQ_del_dec_avx2.c:1044:62: warning: cast from 'const opus_int16 *' (aka 'const short *') to '__m128i *' increases required alignment from 2 to 16 [-Wcast-align]
+2026-03-30T15:34:34.2496426Z  1044 |         __m256i B_v  = _mm256_cvtepi16_epi32(_mm_loadu_si128((__m128i*)&      B[0]));
+2026-03-30T15:34:34.2497265Z       |                                                              ^~~~~~~~~~~~~~~~~~~~~
+2026-03-30T15:34:34.2499127Z D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/silk/x86/NSQ_del_dec_avx2.c:1048:58: warning: cast from 'const opus_int16 *' (aka 'const short *') to '__m128i *' increases required alignment from 2 to 16 [-Wcast-align]
+2026-03-30T15:34:34.2501749Z  1048 |             in_v = _mm256_cvtepi16_epi32(_mm_loadu_si128((__m128i*)&in_ptr[-16]));
+2026-03-30T15:34:34.2502515Z       |                                                          ^~~~~~~~~~~~~~~~~~~~~~
+2026-03-30T15:34:34.2504473Z D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/silk/x86/NSQ_del_dec_avx2.c:1049:58: warning: cast from 'const opus_int16 *' (aka 'const short *') to '__m128i *' increases required alignment from 2 to 16 [-Wcast-align]
+2026-03-30T15:34:34.2506455Z  1049 |             B_v  = _mm256_cvtepi16_epi32(_mm_loadu_si128((__m128i*)&B       [8]));
+2026-03-30T15:34:34.2507267Z       |                                                          ^~~~~~~~~~~~~~~~~~~~~~
+2026-03-30T15:34:34.2507909Z 7 warnings generated.
+2026-03-30T15:34:44.8086520Z [163/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_14_cxx.cxx.obj
+2026-03-30T15:34:48.3698889Z [164/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_13_cxx.cxx.obj
+2026-03-30T15:34:51.0379362Z [165/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_12_cxx.cxx.obj
+2026-03-30T15:34:58.6807419Z [166/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_11_cxx.cxx.obj
+2026-03-30T15:35:00.3296276Z [167/216] Building CXX object CMakeFiles/DeathAnimations.dir/cmake_pch.hxx.pch
+2026-03-30T15:35:00.9760694Z [168/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_10_cxx.cxx.obj
+2026-03-30T15:35:04.2184830Z [169/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_9_cxx.cxx.obj
+2026-03-30T15:35:07.4383262Z [170/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_8_cxx.cxx.obj
+2026-03-30T15:35:08.9019967Z [171/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_7_cxx.cxx.obj
+2026-03-30T15:35:12.9482895Z [172/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_6_cxx.cxx.obj
+2026-03-30T15:35:14.4121143Z [173/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_5_cxx.cxx.obj
+2026-03-30T15:35:14.7167888Z [174/216] Linking C static library _deps\ogg-build\ogg.lib
+2026-03-30T15:35:15.1693696Z [175/216] Linking C static library _deps\opus-build\opus.lib
+2026-03-30T15:35:19.1813445Z [176/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_4_cxx.cxx.obj
+2026-03-30T15:35:19.2602510Z [177/216] Building C object _deps/opusfile-build/CMakeFiles/opusfile.dir/src/info.c.obj
+2026-03-30T15:35:19.2608983Z FAILED: [code=1] _deps/opusfile-build/CMakeFiles/opusfile.dir/src/info.c.obj 
+2026-03-30T15:35:19.2642579Z C:\Users\runneradmin\.cargo\bin\sccache C:\PROGRA~1\LLVM\bin\clang.exe -DOP_HAVE_LRINTF -ID:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/include -isystem D:/a/death-animation-clone/death-animation-clone/cpm-cache/ogg/b013/include -isystem D:/a/death-animation-clone/death-animation-clone/build/_deps/ogg-build/include -isystem D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/include -O2 -DNDEBUG -g -Xclang -gcodeview -D_DLL -D_MT -Xclang --dependent-lib=msvcrt -flto=thin -std=c89 -pedantic -Wall -Wextra -Wno-parentheses -Wno-long-long -fvisibility=hidden -MD -MT _deps/opusfile-build/CMakeFiles/opusfile.dir/src/info.c.obj -MF _deps\opusfile-build\CMakeFiles\opusfile.dir\src\info.c.obj.d -o _deps/opusfile-build/CMakeFiles/opusfile.dir/src/info.c.obj -c D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src/info.c
+2026-03-30T15:35:19.2738685Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src/info.c:16:
+2026-03-30T15:35:19.2803543Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src\internal.h:31:
+2026-03-30T15:35:19.2976820Z In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdlib.h:12:
+2026-03-30T15:35:19.3078371Z In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt.h:10:
+2026-03-30T15:35:19.3176735Z In file included from C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:57:
+2026-03-30T15:35:19.3217476Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:192:122: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.3296081Z   192 | #if _USE_DECLSPECS_FOR_SAL && ( defined( MIDL_PASS ) || defined(__midl) || defined(RC_INVOKED) || !defined(_PREFAST_) ) // [
+2026-03-30T15:35:19.3347842Z       |                                                                                                                          ^
+2026-03-30T15:35:19.3397453Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:196:129: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.3502002Z   196 | #if _USE_ATTRIBUTES_FOR_SAL && ( !defined(_MSC_EXTENSIONS) || defined( MIDL_PASS ) || defined(__midl) || defined(RC_INVOKED) ) // [
+2026-03-30T15:35:19.3544797Z       |                                                                                                                                 ^
+2026-03-30T15:35:19.3547975Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1497:56: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.3633032Z  1497 | #if _USE_ATTRIBUTES_FOR_SAL || _USE_DECLSPECS_FOR_SAL // [
+2026-03-30T15:35:19.3733982Z       |                                                        ^
+2026-03-30T15:35:19.3834077Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1557:30: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.3873231Z  1557 | #if _USE_ATTRIBUTES_FOR_SAL // [
+2026-03-30T15:35:19.3972189Z       |                              ^
+2026-03-30T15:35:19.4073689Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1585:31: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.4173152Z  1585 | #elif _USE_DECLSPECS_FOR_SAL // ][
+2026-03-30T15:35:19.4212844Z       |                               ^
+2026-03-30T15:35:19.4297896Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1625:56: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.4408244Z  1625 | #if _USE_ATTRIBUTES_FOR_SAL || _USE_DECLSPECS_FOR_SAL // [
+2026-03-30T15:35:19.4498661Z       |                                                        ^
+2026-03-30T15:35:19.4550095Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1664:30: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.4629846Z  1664 | #if _USE_ATTRIBUTES_FOR_SAL // [
+2026-03-30T15:35:19.4733546Z       |                              ^
+2026-03-30T15:35:19.4830663Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1774:31: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.4915553Z  1774 | #elif _USE_DECLSPECS_FOR_SAL // ][
+2026-03-30T15:35:19.4953590Z       |                               ^
+2026-03-30T15:35:19.5073833Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1877:123: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.5167213Z  1877 | #elif defined(_MSC_EXTENSIONS) && !defined( MIDL_PASS ) && !defined(__midl) && !defined(RC_INVOKED) && defined(_PFT_VER) // ][
+2026-03-30T15:35:19.5209730Z       |                                                                                                                           ^
+2026-03-30T15:35:19.5245301Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:2384:45: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.5286034Z  2384 | #if !defined(__midl) && defined(_PREFAST_) // [
+2026-03-30T15:35:19.5404439Z       |                                             ^
+2026-03-30T15:35:19.5504702Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:2880:53: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.5563818Z  2880 | #if (!defined(_MSVC_LANG) || _MSVC_LANG < 201703l) // [
+2026-03-30T15:35:19.5625318Z       |                                                     ^
+2026-03-30T15:35:19.5732268Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src/info.c:16:
+2026-03-30T15:35:19.5841371Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src\internal.h:32:
+2026-03-30T15:35:19.5901872Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/include\opusfile.h:108:
+2026-03-30T15:35:19.5962831Z In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdio.h:13:
+2026-03-30T15:35:19.6061588Z In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:13:
+2026-03-30T15:35:19.6161039Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_stdio_config.h:29:26: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.6221050Z    29 | #if !defined RC_INVOKED // RC has no target architecture
+2026-03-30T15:35:19.6286486Z       |                          ^
+2026-03-30T15:35:19.6384301Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_stdio_config.h:51:26: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.6485417Z    51 | #if !defined RC_INVOKED // _CRT_STDIO_LEGACY_WIDE_SPECIFIERS et al. are too long for rc
+2026-03-30T15:35:19.6557901Z       |                          ^
+2026-03-30T15:35:19.6617437Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src/info.c:16:
+2026-03-30T15:35:19.6718258Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src\internal.h:32:
+2026-03-30T15:35:19.6816698Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/include\opusfile.h:108:
+2026-03-30T15:35:19.6877175Z In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdio.h:13:
+2026-03-30T15:35:19.6936706Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:842:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.7037718Z   842 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:19.7143205Z       |                                       ^
+2026-03-30T15:35:19.7196671Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:860:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.7272843Z   860 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:19.7374151Z       |                                       ^
+2026-03-30T15:35:19.7473191Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:879:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.7533293Z   879 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:19.7591888Z       |                                       ^
+2026-03-30T15:35:19.7698164Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:899:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.7812141Z   899 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:19.7857975Z       |                                       ^
+2026-03-30T15:35:19.7909607Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:919:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.8018120Z   919 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:19.8150047Z       |                                       ^
+2026-03-30T15:35:19.8191214Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:936:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:19.8228277Z   936 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:19.8350519Z       |                                       ^
+2026-03-30T15:35:19.8469278Z fatal error: too many errors emitted, stopping now [-ferror-limit=]
+2026-03-30T15:35:19.8517063Z 20 errors generated.
+2026-03-30T15:35:22.9579037Z [178/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_2_cxx.cxx.obj
+2026-03-30T15:35:23.0069916Z [179/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_3_cxx.cxx.obj
+2026-03-30T15:35:23.0137222Z [180/216] Building C object _deps/opusfile-build/CMakeFiles/opusfile.dir/src/internal.c.obj
+2026-03-30T15:35:23.0138536Z FAILED: [code=1] _deps/opusfile-build/CMakeFiles/opusfile.dir/src/internal.c.obj 
+2026-03-30T15:35:23.0145187Z C:\Users\runneradmin\.cargo\bin\sccache C:\PROGRA~1\LLVM\bin\clang.exe -DOP_HAVE_LRINTF -ID:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/include -isystem D:/a/death-animation-clone/death-animation-clone/cpm-cache/ogg/b013/include -isystem D:/a/death-animation-clone/death-animation-clone/build/_deps/ogg-build/include -isystem D:/a/death-animation-clone/death-animation-clone/cpm-cache/opus/65aa/include -O2 -DNDEBUG -g -Xclang -gcodeview -D_DLL -D_MT -Xclang --dependent-lib=msvcrt -flto=thin -std=c89 -pedantic -Wall -Wextra -Wno-parentheses -Wno-long-long -fvisibility=hidden -MD -MT _deps/opusfile-build/CMakeFiles/opusfile.dir/src/internal.c.obj -MF _deps\opusfile-build\CMakeFiles\opusfile.dir\src\internal.c.obj.d -o _deps/opusfile-build/CMakeFiles/opusfile.dir/src/internal.c.obj -c D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src/internal.c
+2026-03-30T15:35:23.0153036Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src/internal.c:16:
+2026-03-30T15:35:23.0154534Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src\internal.h:31:
+2026-03-30T15:35:23.0155901Z In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdlib.h:12:
+2026-03-30T15:35:23.0157117Z In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt.h:10:
+2026-03-30T15:35:23.0158466Z In file included from C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\vcruntime.h:57:
+2026-03-30T15:35:23.0160274Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:192:122: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0161956Z   192 | #if _USE_DECLSPECS_FOR_SAL && ( defined( MIDL_PASS ) || defined(__midl) || defined(RC_INVOKED) || !defined(_PREFAST_) ) // [
+2026-03-30T15:35:23.0163161Z       |                                                                                                                          ^
+2026-03-30T15:35:23.0164600Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:196:129: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0166445Z   196 | #if _USE_ATTRIBUTES_FOR_SAL && ( !defined(_MSC_EXTENSIONS) || defined( MIDL_PASS ) || defined(__midl) || defined(RC_INVOKED) ) // [
+2026-03-30T15:35:23.0168053Z       |                                                                                                                                 ^
+2026-03-30T15:35:23.0169533Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1497:56: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0170921Z  1497 | #if _USE_ATTRIBUTES_FOR_SAL || _USE_DECLSPECS_FOR_SAL // [
+2026-03-30T15:35:23.0171625Z       |                                                        ^
+2026-03-30T15:35:23.0172875Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1557:30: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0174201Z  1557 | #if _USE_ATTRIBUTES_FOR_SAL // [
+2026-03-30T15:35:23.0174698Z       |                              ^
+2026-03-30T15:35:23.0175850Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1585:31: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0177194Z  1585 | #elif _USE_DECLSPECS_FOR_SAL // ][
+2026-03-30T15:35:23.0177684Z       |                               ^
+2026-03-30T15:35:23.0178922Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1625:56: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0180362Z  1625 | #if _USE_ATTRIBUTES_FOR_SAL || _USE_DECLSPECS_FOR_SAL // [
+2026-03-30T15:35:23.0181107Z       |                                                        ^
+2026-03-30T15:35:23.0182410Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1664:30: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0183709Z  1664 | #if _USE_ATTRIBUTES_FOR_SAL // [
+2026-03-30T15:35:23.0184260Z       |                              ^
+2026-03-30T15:35:23.0185473Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1774:31: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0186804Z  1774 | #elif _USE_DECLSPECS_FOR_SAL // ][
+2026-03-30T15:35:23.0187754Z       |                               ^
+2026-03-30T15:35:23.0188991Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:1877:123: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0191333Z  1877 | #elif defined(_MSC_EXTENSIONS) && !defined( MIDL_PASS ) && !defined(__midl) && !defined(RC_INVOKED) && defined(_PFT_VER) // ][
+2026-03-30T15:35:23.0192546Z       |                                                                                                                           ^
+2026-03-30T15:35:23.0193975Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:2384:45: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0195311Z  2384 | #if !defined(__midl) && defined(_PREFAST_) // [
+2026-03-30T15:35:23.0195880Z       |                                             ^
+2026-03-30T15:35:23.0197144Z C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\include\sal.h:2880:53: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0198426Z  2880 | #if (!defined(_MSVC_LANG) || _MSVC_LANG < 201703l) // [
+2026-03-30T15:35:23.0199079Z       |                                                     ^
+2026-03-30T15:35:23.0200106Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src/internal.c:16:
+2026-03-30T15:35:23.0201584Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src\internal.h:32:
+2026-03-30T15:35:23.0203115Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/include\opusfile.h:108:
+2026-03-30T15:35:23.0204471Z In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdio.h:13:
+2026-03-30T15:35:23.0205735Z In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:13:
+2026-03-30T15:35:23.0207787Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_stdio_config.h:29:26: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0209103Z    29 | #if !defined RC_INVOKED // RC has no target architecture
+2026-03-30T15:35:23.0209720Z       |                          ^
+2026-03-30T15:35:23.0210767Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_stdio_config.h:51:26: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0212210Z    51 | #if !defined RC_INVOKED // _CRT_STDIO_LEGACY_WIDE_SPECIFIERS et al. are too long for rc
+2026-03-30T15:35:23.0212978Z       |                          ^
+2026-03-30T15:35:23.0213861Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src/internal.c:16:
+2026-03-30T15:35:23.0215381Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/src\internal.h:32:
+2026-03-30T15:35:23.0216879Z In file included from D:/a/death-animation-clone/death-animation-clone/cpm-cache/opusfile/01d1/include\opusfile.h:108:
+2026-03-30T15:35:23.0218226Z In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdio.h:13:
+2026-03-30T15:35:23.0219707Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:842:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0220894Z   842 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:23.0221475Z       |                                       ^
+2026-03-30T15:35:23.0222585Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:860:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0223820Z   860 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:23.0224412Z       |                                       ^
+2026-03-30T15:35:23.0225524Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:879:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0226784Z   879 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:23.0227342Z       |                                       ^
+2026-03-30T15:35:23.0229429Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:899:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0230660Z   899 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:23.0231251Z       |                                       ^
+2026-03-30T15:35:23.0232419Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:919:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0233618Z   919 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:23.0234219Z       |                                       ^
+2026-03-30T15:35:23.0235343Z C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:936:39: error: invalid token at start of a preprocessor expression
+2026-03-30T15:35:23.0236595Z   936 |     #if defined _NO_CRT_STDIO_INLINE // SCANF
+2026-03-30T15:35:23.0237168Z       |                                       ^
+2026-03-30T15:35:23.0237844Z fatal error: too many errors emitted, stopping now [-ferror-limit=]
+2026-03-30T15:35:23.0238537Z 20 errors generated.
+2026-03-30T15:35:23.3286100Z [181/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_1_cxx.cxx.obj
+2026-03-30T15:35:25.6180173Z [182/216] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_0_cxx.cxx.obj
+2026-03-30T15:35:25.6186964Z ninja: build stopped: subcommand failed.
+2026-03-30T15:35:25.6295754Z ##[error]Process completed with exit code 1.
+2026-03-30T15:35:25.6690993Z Post job cleanup.
+2026-03-30T15:35:25.6852234Z Post job cleanup.
+2026-03-30T15:35:25.9241182Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-03-30T15:35:25.9519592Z git version 2.53.0.windows.2
+2026-03-30T15:35:25.9595599Z Temporarily overriding HOME='D:\a\_temp\e46144ea-b32f-45d8-82e8-ea793db41912' before making global git config changes
+2026-03-30T15:35:25.9596538Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-30T15:35:25.9607267Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\death-animation-clone\death-animation-clone\bindings-repo
+2026-03-30T15:35:25.9922188Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-03-30T15:35:26.0239690Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-03-30T15:35:26.5859489Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-30T15:35:26.6132032Z http.https://github.com/.extraheader
+2026-03-30T15:35:26.6185148Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2026-03-30T15:35:26.6506565Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-03-30T15:35:27.1934737Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-30T15:35:27.2248685Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-03-30T15:35:27.8024987Z Post job cleanup.
+2026-03-30T15:35:28.1517988Z ##[group]sccache stats
+2026-03-30T15:35:28.2725173Z [command]C:\Users\runneradmin\.cargo\bin\sccache.exe -s
+2026-03-30T15:35:28.2938345Z Compile requests                    176
+2026-03-30T15:35:28.2939340Z Compile requests executed           176
+2026-03-30T15:35:28.2939766Z Cache hits                            0
+2026-03-30T15:35:28.2940134Z Cache misses                        174
+2026-03-30T15:35:28.2940497Z Cache misses (C/C++)                174
+2026-03-30T15:35:28.2941237Z Cache hits rate                    0.00 %
+2026-03-30T15:35:28.2941672Z Cache hits rate (C/C++)            0.00 %
+2026-03-30T15:35:28.2942037Z Cache timeouts                        0
+2026-03-30T15:35:28.2942401Z Cache read errors                     0
+2026-03-30T15:35:28.2942761Z Forced recaches                       0
+2026-03-30T15:35:28.2943112Z Cache write errors                    0
+2026-03-30T15:35:28.2943457Z Cache errors                          2
+2026-03-30T15:35:28.2943822Z Cache errors (C/C++)                  2
+2026-03-30T15:35:28.2944198Z Compilations                        174
+2026-03-30T15:35:28.2944584Z Compilation failures                  0
+2026-03-30T15:35:28.2944952Z Non-cacheable compilations            0
+2026-03-30T15:35:28.2945336Z Non-cacheable calls                   0
+2026-03-30T15:35:28.2945703Z Non-compilation calls                 0
+2026-03-30T15:35:28.2946088Z Unsupported compiler calls            0
+2026-03-30T15:35:28.2946497Z Average cache write               0.001 s
+2026-03-30T15:35:28.2946861Z Average compiler                  1.997 s
+2026-03-30T15:35:28.2947237Z Average cache read hit            0.000 s
+2026-03-30T15:35:28.2947628Z Failed distributed compilations       0
+2026-03-30T15:35:28.2948307Z Cache location                  Local disk: "D:\\a\\death-animation-clone\\death-animation-clone\\.sccache"
+2026-03-30T15:35:28.2949031Z Use direct/preprocessor mode?   yes
+2026-03-30T15:35:28.2949425Z Version (client)                0.10.0
+2026-03-30T15:35:28.2953227Z Cache size                           55 MiB
+2026-03-30T15:35:28.2953772Z Max cache size                       10 GiB
+2026-03-30T15:35:28.2975774Z ##[endgroup]
+2026-03-30T15:35:28.4829895Z Save cache using key "sccache-win-v1-2026-03-30T15:35:28.480Z".
+2026-03-30T15:35:28.6184094Z [command]"C:\Program Files\Git\usr\bin\tar.exe" --posix -cf cache.tzst --exclude cache.tzst -P -C D:/a/death-animation-clone/death-animation-clone --files-from manifest.txt --force-local --use-compress-program "zstd -T0"
+2026-03-30T15:35:30.2249870Z Sent 57520111 of 57520111 (100.0%), 54.5 MBs/sec
+2026-03-30T15:35:30.4551516Z Post job cleanup.
+2026-03-30T15:35:30.6805624Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-03-30T15:35:30.7083703Z git version 2.53.0.windows.2
+2026-03-30T15:35:30.7159868Z Temporarily overriding HOME='D:\a\_temp\1388865c-c463-444e-81ff-16ad8c7f1aa6' before making global git config changes
+2026-03-30T15:35:30.7160610Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-30T15:35:30.7171845Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\death-animation-clone\death-animation-clone
+2026-03-30T15:35:30.7485224Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-03-30T15:35:30.7789291Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-03-30T15:35:31.3350236Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-30T15:35:31.3639274Z http.https://github.com/.extraheader
+2026-03-30T15:35:31.3690352Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2026-03-30T15:35:31.4014084Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-03-30T15:35:31.9318991Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-30T15:35:31.9646001Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-03-30T15:35:32.5393855Z Cleaning up orphan processes
+2026-03-30T15:35:32.5614185Z Terminate orphan process: pid (3904) (sccache)
+2026-03-30T15:35:32.5715362Z Terminate orphan process: pid (2112) (conhost)
+2026-03-30T15:35:32.5902815Z Terminate orphan process: pid (3432) (vctip)
+2026-03-30T15:35:32.6093807Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/cache@v4, actions/checkout@v4, hendrikmuhs/ccache-action@v1, robinraju/release-downloader@v1.10. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

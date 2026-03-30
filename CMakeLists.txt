@@ -10,6 +10,11 @@ set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
 project(DeathAnimations VERSION 1.0.0)
 
+if (WIN32 AND CMAKE_C_COMPILER_ID STREQUAL "Clang")
+    message(STATUS "Using Clang on Windows: enabling MS compatibility flags")
+    add_compile_options(-fms-extensions -fms-compatibility)
+endif()
+
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp)
 add_library(${PROJECT_NAME} SHARED ${SOURCES})
 
